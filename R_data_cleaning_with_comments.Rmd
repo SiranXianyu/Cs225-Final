@@ -299,10 +299,14 @@ result_drop_non_univ = result_1 |>
 result_drop_non_univ_2 = result_drop_non_univ |>
   filter(!(X1 %like% "Arizona State University" | X2 %like% "Arizona State University"))
 
-result_drop_non_univ_2 |>
+output_2 = result_drop_non_univ_2 |>
   filter(X1 != X2) |>
   rename(Univ_1 = X1, Univ_2 = X2)
 
-result_drop_non_univ_2$Weight =  0.0
-write.csv(result_drop_non_univ_2, "C:/Users/jialong/Desktop/cs225/data_edge.csv")
+output_2$Weight =  0.0
+write.csv(output_2, "C:/Users/jialong/Desktop/cs225/data_edge.csv")
+
+output_2 |>
+  count(Univ_1) |>
+  arrange(desc(n))
 ```
