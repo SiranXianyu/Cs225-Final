@@ -27,8 +27,8 @@ Class Graph {
     //be a matrix representing the connected components while each line refers to 
     //one connected component. The time complexity will be O(V+E),
     //and the space complexity will be O(V).
-    void BFS();
-
+    void ConnectedComponents();
+    std::vector<Node> BFS(unsigned school_number, bool visited[]);
     private:
     void ReadSchools();
     void ReadRelations();
@@ -37,10 +37,12 @@ Class Graph {
     void RefineLists();
     std::vector<Node> nodes_;
     std::vector<std::vector<Node> > adjacency_lists_;
+
+
     //raw data of universities stored in pairs
     std::vector<std::pair<std::string, int> > schools;
     std::vector<std::pair<std::string, string>> relations;
 
     //data after BFS for searching for connected components
-    std::vector<std::vector<Node> > connected_components;
+    std::vector<std::set<Node> > connected_components;
 };
