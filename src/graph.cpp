@@ -81,7 +81,12 @@ void Graph::RefineLists() {
         bool find_or_not = false;
         for (unsigned k = 0; k < adjacency_lists_.size(); k++) {
             if (adjacency_lists_.at(k).at(0).school_number == school_Number) {
-                new_lists.push_back(adjacency_lists_.at(k));
+                std::vector<Node> list = adjacency_lists_.at(k);
+                
+                //delete the first one(the school itself) in each neighbor line, so
+                // that each list only contains all the neighbor
+                list.erase(list.begin());
+                new_lists.push_back(list);
                 find_or_not = true;
                 break;
             }
