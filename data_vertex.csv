@@ -1,147 +1,146 @@
-"","First_author_univ","Cited_times","Longitude","Latitude"
-"1","Harvard University",72851,0,0
-"2","Stanford University",46667,0,0
-"3","University of Wisconsin System",35180,0,0
-"4","University of Toronto",30616,0,0
-"5","University of Washington",27620,0,0
-"6","University of California System",25257,0,0
-"7","Columbia University",15165,0,0
-"8","University of Minnesota System",13765,0,0
-"9","University of Illinois System",11707,0,0
-"10","University of London",10065,0,0
-"11","University of Chicago",9651,0,0
-"12","Princeton University",8572,0,0
-"13","University of Bristol",7115,0,0
-"14","Duke University",6809,0,0
-"15","Johns Hopkins University",6375,0,0
-"16","State University System of Florida",6109,0,0
-"17","Washington University (WUSTL)",5628,0,0
-"18","University of Oxford",5471,0,0
-"19","University System of Georgia",5424,0,0
-"20","Chinese University of Hong Kong",5190,0,0
-"21","Colorado State University",5103,0,0
-"22","University of Pennsylvania",4941,0,0
-"23","University of Oregon",4695,0,0
-"24","University of Bath",4359,0,0
-"25","Wake Forest University",4203,0,0
-"26","Cardiff University",4128,0,0
-"27","Lancaster University",3771,0,0
-"28","Rutgers State University New Brunswick",3612,0,0
-"29","University of Munster",3600,0,0
-"30","University of Munich",2998,0,0
-"31","University of Michigan System",2970,0,0
-"32","Carnegie Mellon University",2888,0,0
-"33","Cornell University",2819,0,0
-"34","Australian National University",2698,0,0
-"35","Yale University",2582,0,0
-"36","University System of Ohio",2520,0,0
-"37","Norwegian University of Science & Technology (NTNU)",2502,0,0
-"38","University of Cambridge",2401,0,0
-"39","Tel Aviv University",2385,0,0
-"40","University of Arizona",2372,0,0
-"41","McMaster University",2342,0,0
-"42","London Metropolitan University",2320,0,0
-"43","University System of Maryland",2243,0,0
-"44","Louisiana State University System",2190,0,0
-"45","University of British Columbia",2169,0,0
-"46","University of Texas System",2138,0,0
-"47","University of Padua",2022,0,0
-"48","Iowa State University",1958,0,0
-"49","University of Auckland",1957,0,0
-"50","Leiden University",1946,0,0
-"51","Hebrew University of Jerusalem",1917,0,0
-"52","University of Helsinki",1909,0,0
-"53","Boston University",1835,0,0
-"54","University of St Andrews",1765,0,0
-"55","University of Rochester",1763,0,0
-"56","State University of New York (SUNY) System",1707,0,0
-"57","University of Queensland",1684,0,0
-"58","Aalto University",1675,0,0
-"59","Drexel University",1651,0,0
-"60","University of Alabama System",1610,0,0
-"61","Dortmund University of Technology",1540,0,0
-"62","University of Edinburgh",1534,0,0
-"63","University of Waterloo",1491,0,0
-"64","University of Sydney",1467,0,0
-"65","University of Copenhagen",1415,0,0
-"66","University of Antwerp",1406,0,0
-"67","Vienna University of Economics & Business",1383,0,0
-"68","Aarhus University",1323,0,0
-"69","Pompeu Fabra University",1318,0,0
-"70","University of Kentucky",1292,0,0
-"71","University of Massachusetts System",1267,0,0
-"72","Purdue University System",1196,0,0
-"73","University of Palermo",1190,0,0
-"74","University of New South Wales Sydney",1169,0,0
-"75","Indiana University System",1161,0,0
-"76","University of Vienna",1147,0,0
-"77","University of Glasgow",1144,0,0
-"78","Rice University",1141,0,0
-"79","University of New Brunswick",1133,0,0
-"80","University of Perugia",1083,0,0
-"81","University of Miami",1055,0,0
-"82","University of Freiburg",1028,0,0
-"83","University of Surrey",1028,0,0
-"84","Northwestern University",980,0,0
-"85","Sapienza University Rome",974,0,0
-"86","University of Cologne",969,0,0
-"87","University of Buenos Aires",906,0,0
-"88","University of Erlangen Nuremberg",897,0,0
-"89","Delft University of Technology",874,0,0
-"90","Gonzaga University",852,0,0
-"91","Flinders University South Australia",838,0,0
-"92","York University - Canada",802,0,0
-"93","Virginia Polytechnic Institute & State University",801,0,0
-"94","New York University",772,0,0
-"95","University of Southern Denmark",746,0,0
-"96","Kansas State University",744,0,0
-"97","Humboldt University of Berlin",714,0,0
-"98","Acadia University",706,0,0
-"99","University of Valencia",703,0,0
-"100","University of Amsterdam",702,0,0
-"101","University of Hawaii System",701,0,0
-"102","University of Western Australia",700,0,0
-"103","Hasselt University",675,0,0
-"104","University of Oslo",638,0,0
-"105","Washington State University",633,0,0
-"106","University of Delaware",627,0,0
-"107","Michigan State University",620,0,0
-"108","Newcastle University - UK",612,0,0
-"109","Kangwon National University",607,0,0
-"110","Central Michigan University",603,0,0
-"111","University of Nottingham",595,0,0
-"112","University of Warwick",575,0,0
-"113","Erasmus University Rotterdam",567,0,0
-"114","Simon Bolivar University",554,0,0
-"115","University of Leeds",546,0,0
-"116","University of Hull",539,0,0
-"117","University of Kent",537,0,0
-"118","Medical University of Vienna",528,0,0
-"119","Hacettepe University",521,0,0
-"120","Sokoine University of Agriculture",521,0,0
-"121","University of Sheffield",508,0,0
-"122","University of Connecticut",506,0,0
-"123","Utrecht University",506,0,0
-"124","Roma Tre University",504,0,0
-"125","Memorial University Newfoundland",502,0,0
-"126","Peking University",498,0,0
-"127","University of Adelaide",496,0,0
-"128","University of Reading",492,0,0
-"129","University of Milan",491,0,0
-"130","Texas A&M University System",490,0,0
-"131","Ruprecht Karls University Heidelberg",489,0,0
-"132","University of Plymouth",487,0,0
-"133","Open University - UK",477,0,0
-"134","University of Manitoba",450,0,0
-"135","University of Aberdeen",443,0,0
-"136","University of Basel",427,0,0
-"137","Carleton University",417,0,0
-"138","University of Maine System",413,0,0
-"139","Auburn University System",409,0,0
-"140","Queens University - Canada",407,0,0
-"141","Xiamen University",407,0,0
-"142","University of Southampton",404,0,0
-"143","La Trobe University",395,0,0
-"144","National Sun Yat Sen University",390,0,0
-"145","University of Iowa",387,0,0
-"146","University of Nebraska System",381,0,0
+Harvard University,72851
+Stanford University,46667
+University of Wisconsin System,35180
+University of Toronto,30616
+University of Washington,27620
+University of California System,25257
+Columbia University,15165
+University of Minnesota System,13765
+University of Illinois System,11707
+University of London,10065
+University of Chicago,9651
+Princeton University,8572
+University of Bristol,7115
+Duke University,6809
+Johns Hopkins University,6375
+State University System of Florida,6109
+Washington University (WUSTL),5628
+University of Oxford,5471
+Chinese University of Hong Kong,5190
+Colorado State University,5103
+University of Pennsylvania,4941
+University of Oregon,4695
+University of Bath,4359
+Wake Forest University,4203
+Cardiff University,4128
+Lancaster University,3771
+Rutgers State University New Brunswick,3612
+University of Munster,3600
+University of Munich,2998
+University of Michigan System,2970
+Carnegie Mellon University,2888
+Cornell University,2819
+Australian National University,2698
+Yale University,2582
+University System of Ohio,2520
+Norwegian University of Science & Technology (NTNU),2502
+University of Cambridge,2401
+Tel Aviv University,2385
+University of Arizona,2372
+McMaster University,2342
+London Metropolitan University,2320
+University System of Maryland,2243
+Louisiana State University System,2190
+University of British Columbia,2169
+University of Texas System,2138
+University of Padua,2022
+Iowa State University,1958
+University of Auckland,1957
+Leiden University,1946
+Hebrew University of Jerusalem,1917
+University of Helsinki,1909
+Boston University,1835
+University of St Andrews,1765
+University of Rochester,1763
+State University of New York (SUNY) System,1707
+University of Queensland,1684
+Aalto University,1675
+Drexel University,1651
+University of Alabama System,1610
+Dortmund University of Technology,1540
+University of Edinburgh,1534
+University of Waterloo,1491
+University System of Georgia,1481
+University of Sydney,1467
+University of Copenhagen,1415
+University of Antwerp,1406
+Vienna University of Economics & Business,1383
+Aarhus University,1323
+Pompeu Fabra University,1318
+University of Kentucky,1292
+University of Massachusetts System,1267
+Purdue University System,1196
+University of Palermo,1190
+University of New South Wales Sydney,1169
+Indiana University System,1161
+University of Vienna,1147
+University of Glasgow,1144
+Rice University,1141
+University of New Brunswick,1133
+University of Perugia,1083
+University of Miami,1055
+University of Freiburg,1028
+University of Surrey,1028
+Northwestern University,980
+Sapienza University Rome,974
+University of Cologne,969
+University of Buenos Aires,906
+University of Erlangen Nuremberg,897
+Delft University of Technology,874
+Gonzaga University,852
+Flinders University South Australia,838
+York University - Canada,802
+Virginia Polytechnic Institute & State University,801
+New York University,772
+University of Southern Denmark,746
+Kansas State University,744
+Humboldt University of Berlin,714
+Acadia University,706
+University of Valencia,703
+University of Amsterdam,702
+University of Hawaii System,701
+University of Western Australia,700
+Hasselt University,675
+University of Oslo,638
+Washington State University,633
+University of Delaware,627
+Michigan State University,620
+Newcastle University - UK,612
+Kangwon National University,607
+Central Michigan University,603
+University of Nottingham,595
+University of Warwick,575
+Erasmus University Rotterdam,567
+Simon Bolivar University,554
+University of Leeds,546
+University of Hull,539
+University of Kent,537
+Medical University of Vienna,528
+Hacettepe University,521
+Sokoine University of Agriculture,521
+University of Sheffield,508
+University of Connecticut,506
+Utrecht University,506
+Roma Tre University,504
+Memorial University Newfoundland,502
+Peking University,498
+University of Adelaide,496
+University of Reading,492
+University of Milan,491
+Texas A&M University System,490
+Ruprecht Karls University Heidelberg,489
+University of Plymouth,487
+Open University - UK,477
+University of Manitoba,450
+University of Aberdeen,443
+University of Basel,427
+Carleton University,417
+University of Maine System,413
+Auburn University System,409
+Queens University - Canada,407
+Xiamen University,407
+University of Southampton,404
+La Trobe University,395
+National Sun Yat Sen University,390
+University of Iowa,387
+University of Nebraska System,381

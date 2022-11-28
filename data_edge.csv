@@ -1,543 +1,553 @@
-"","Univ_1","Univ_2","Weight"
-"1","Aalto University","Columbia University",0
-"2","Aalto University","Columbia University",0
-"3","Aarhus University","University of Iowa",0
-"4","Acadia University","University of Pennsylvania",0
-"5","Acadia University","University of Texas Austin",0
-"6","Auburn University","Georgia Southern University",0
-"7","Auburn University","Virginia Polytechnic Institute & State University",0
-"8","Australian National University","University of Florida",0
-"9","Australian National University","University of Western Australia",0
-"10","Australian National University","University of Minnesota Twin Cities",0
-"11","Boston University","Harvard University",0
-"12","Boston University","University of London",0
-"13","Boston University","University College London",0
-"14","Bowling Green State University","Hungarian Alfred Renyi Institute of Mathematics",0
-"15","Bowling Green State University","Hungarian Alfred Renyi Institute of Mathematics",0
-"16","Carnegie Mellon University","University of California Berkeley",0
-"17","Carnegie Mellon University","University of Minnesota Twin Cities",0
-"18","Carnegie Mellon University","Columbia University",0
-"19","Carnegie Mellon University","University of Toronto",0
-"20","Carnegie Mellon University","University of Sheffield",0
-"21","Chinese University of Hong Kong","University of California Los Angeles",0
-"22","Chinese University of Hong Kong","University of Wisconsin Madison",0
-"23","Chinese University of Hong Kong","University of California Los Angeles",0
-"24","Colorado State University","University of Washington",0
-"25","Colorado State University","University of Washington Seattle",0
-"26","Colorado State University","University of California Davis",0
-"27","Colorado State University","University of California Davis",0
-"28","Columbia University","York University - Canada",0
-"29","Columbia University","University of Chicago",0
-"30","Columbia University","Harvard University",0
-"31","Columbia University","University of Chicago",0
-"32","Columbia University","Iowa State University",0
-"33","Columbia University","Sapienza University Rome",0
-"34","Columbia University","Aalto University",0
-"35","Columbia University","Indiana University Bloomington",0
-"36","Columbia University","University of California Berkeley",0
-"37","Columbia University","University of Minnesota Twin Cities",0
-"38","Columbia University","Harvard University",0
-"39","Columbia University","Sapienza University Rome",0
-"40","Columbia University","University of California Berkeley",0
-"41","Columbia University","National Institutes of Health (NIH) - USA",0
-"42","Columbia University","University of Minnesota Twin Cities",0
-"43","Columbia University","University of Cambridge",0
-"44","Columbia University","NIH National Heart Lung & Blood Institute (NHLBI)",0
-"45","Columbia University","Harvard University",0
-"46","Columbia University","SUNY Community College",0
-"47","Columbia University","University of Toronto",0
-"48","Cornell University","Harvard University",0
-"49","Cornell University","Harvard University",0
-"50","Dana-Farber Cancer Institute","Harvard University",0
-"51","Dana-Farber Cancer Institute","Harvard University",0
-"52","Dana-Farber Cancer Institute","Boston University",0
-"53","Dana-Farber Cancer Institute","Boston University",0
-"54","Dana-Farber Cancer Institute","Harvard University",0
-"55","Dana-Farber Cancer Institute","Worcester Polytechnic Institute",0
-"56","Dortmund University of Technology","Columbia University",0
-"57","Drexel University","Johns Hopkins University",0
-"58","Drexel University","Johns Hopkins University",0
-"59","Duke University","Harvard University",0
-"60","Duke University","University of Miami",0
-"61","Erasmus University Rotterdam","University of Virginia",0
-"62","Flinders University South Australia","Colorado State University",0
-"63","Georgia Institute of Technology","University of Wisconsin Madison",0
-"64","Georgia Institute of Technology","University of Wisconsin Madison",0
-"65","Georgia Southern University","Virginia Polytechnic Institute & State University",0
-"66","Harvard University","Massachusetts Institute of Technology (MIT)",0
-"67","Harvard University","Massachusetts Institute of Technology (MIT)",0
-"68","Harvard University","Boston University",0
-"69","Harvard University","Dana-Farber Cancer Institute",0
-"70","Harvard University","Dana-Farber Cancer Institute",0
-"71","Harvard University","Massachusetts Institute of Technology (MIT)",0
-"72","Harvard University","Massachusetts Institute of Technology (MIT)",0
-"73","Harvard University","University of Chicago",0
-"74","Harvard University","University of Chicago",0
-"75","Harvard University","Princeton University",0
-"76","Harvard University","University of California Berkeley",0
-"77","Harvard University","University of Illinois Urbana-Champaign",0
-"78","Harvard University","University of Milan",0
-"79","Harvard University","Texas A&M University College Station",0
-"80","Harvard University","Princeton University",0
-"81","Harvard University","Temple University",0
-"82","Harvard University","University of Chicago",0
-"83","Harvard University","University of Michigan",0
-"84","Harvard University","University of Trieste",0
-"85","Harvard University","Boston University",0
-"86","Harvard University","Dana-Farber Cancer Institute",0
-"87","Harvard University","Dana-Farber Cancer Institute",0
-"88","Harvard University","University of California Berkeley",0
-"89","Harvard University","Boston University",0
-"90","Harvard University","University of California Berkeley",0
-"91","Harvard University","Worcester Polytechnic Institute",0
-"92","Harvard University","Aalto University",0
-"93","Harvard University","University of Milan",0
-"94","Harvard University","Johns Hopkins University",0
-"95","Harvard University","University of Trieste",0
-"96","Harvard University","Boston University",0
-"97","Harvard University","University of Trieste",0
-"98","Harvard University","Johns Hopkins University",0
-"99","Harvard University","Dana-Farber Cancer Institute",0
-"100","Harvard University","Boston University",0
-"101","Harvard University","Dana-Farber Cancer Institute",0
-"102","Harvard University","Dana-Farber Cancer Institute",0
-"103","Harvard University","Boston University",0
-"104","Harvard University","Schering-Plough Research Institute",0
-"105","Harvard University","Worcester Polytechnic Institute",0
-"106","Harvard University","University of Miami",0
-"107","Hebrew University of Jerusalem","University of Rochester",0
-"108","Hebrew University of Jerusalem","UDICE-French Research Universities",0
-"109","Hopital Universitaire Pitie-Salpetriere - APHP","Institut National de la Sante et de la Recherche Medicale (Inserm)",0
-"110","Hopital Universitaire Pitie-Salpetriere - APHP","UDICE-French Research Universities",0
-"111","Hopital Universitaire Pitie-Salpetriere - APHP","Sorbonne Universite",0
-"112","Imperial College London","University of London",0
-"113","Imperial College London","University of Oxford",0
-"114","Imperial College London","University of Cambridge",0
-"115","Imperial College London","University of Minnesota Twin Cities",0
-"116","Indian Institute of Management Ahmedabad","Harvard University",0
-"117","Indian Institute of Management Ahmedabad","Dana-Farber Cancer Institute",0
-"118","Indian Statistical Institute Kolkata","Northern Arizona University",0
-"119","Indian Statistical Institute Kolkata","University of Oslo",0
-"120","Indian Statistical Institute Kolkata","University of North Carolina Chapel Hill",0
-"121","Indian Statistical Institute Kolkata","Open University - UK",0
-"122","Institut National de la Sante et de la Recherche Medicale (Inserm)","UDICE-French Research Universities",0
-"123","Institut National de la Sante et de la Recherche Medicale (Inserm)","Universite de Bordeaux",0
-"124","Institut National de la Sante et de la Recherche Medicale (Inserm)","UDICE-French Research Universities",0
-"125","Institut National de la Sante et de la Recherche Medicale (Inserm)","Sorbonne Universite",0
-"126","Johns Hopkins University","Harvard University",0
-"127","Johns Hopkins University","Harvard University",0
-"128","Johns Hopkins University","University of California Berkeley",0
-"129","Kangwon National University","University of Wisconsin Madison",0
-"130","Kansas State University","Louisiana State University",0
-"131","KIMEP University","University of Gottingen",0
-"132","KIMEP University","University of Gottingen",0
-"133","Lancaster University","University of Toronto",0
-"134","Lancaster University","University of Toronto",0
-"135","Leibniz Institute for Prevention Research & Epidemiology (BIPS)","University of Bremen",0
-"136","Leiden University","Leiden University Medical Center (LUMC)",0
-"137","Leiden University","Leiden University Medical Center (LUMC)",0
-"138","Leiden University","Leiden University - Excl LUMC",0
-"139","Leiden University","Leiden University - Excl LUMC",0
-"140","Leiden University","University of Amsterdam",0
-"141","Leiden University","Leiden University Medical Center (LUMC)",0
-"142","Leiden University","Leiden University - Excl LUMC",0
-"143","Leiden University - Excl LUMC","University of Amsterdam",0
-"144","Leiden University Medical Center (LUMC)","Leiden University - Excl LUMC",0
-"145","Leiden University Medical Center (LUMC)","Leiden University - Excl LUMC",0
-"146","Leiden University Medical Center (LUMC)","University of Amsterdam",0
-"147","Massachusetts Institute of Technology (MIT)","University of Warwick",0
-"148","Massachusetts Institute of Technology (MIT)","University of Chicago",0
-"149","Massachusetts Institute of Technology (MIT)","University of Texas Austin",0
-"150","Massachusetts Institute of Technology (MIT)","University of California Berkeley",0
-"151","Massachusetts Institute of Technology (MIT)","Princeton University",0
-"152","McGill University","Vanderbilt University",0
-"153","Murdoch Children's Research Institute","University of Melbourne",0
-"154","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"155","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"156","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"157","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"158","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"159","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"160","National Institutes of Health (NIH) - USA","NIH National Cancer Institute (NCI)",0
-"161","National Institutes of Health (NIH) - USA","NIH National Heart Lung & Blood Institute (NHLBI)",0
-"162","Nazarbayev University","KIMEP University",0
-"163","Nazarbayev University","University of Gottingen",0
-"164","Nazarbayev University","University of Gottingen",0
-"165","New York State Psychiatry Institute","Columbia University",0
-"166","New York State Psychiatry Institute","SUNY Community College",0
-"167","New York State Psychiatry Institute","Columbia University",0
-"168","New York State Psychiatry Institute","SUNY Community College",0
-"169","New York University","University of California Davis",0
-"170","Northern Arizona University","University of Oslo",0
-"171","Northern Arizona University","Open University - UK",0
-"172","Northwestern University","Carnegie Mellon University",0
-"173","Norwegian Institute of Public Health (NIPH)","University of Bergen",0
-"174","Norwegian University of Science & Technology (NTNU)","Institut Polytechnique de Paris",0
-"175","Ohio State University","University of Michigan",0
-"176","Open University - UK","Carnegie Mellon University",0
-"177","Open University - UK","University of Sheffield",0
-"178","Oxford University Hospitals NHS Foundation Trust","University of Oxford",0
-"179","Oxford University Hospitals NHS Foundation Trust","University of Birmingham",0
-"180","Peking University","Pennsylvania State University - University Park",0
-"181","Pennsylvania State University - University Park","Harvard University",0
-"182","Pennsylvania State University - University Park","Universite de Orleans",0
-"183","Pennsylvania State University - University Park","University of California Los Angeles",0
-"184","Picardie Universites","Universite de Picardie Jules Verne (UPJV)",0
-"185","Picardie Universites","UDICE-French Research Universities",0
-"186","Picardie Universites","Universite Paris Cite",0
-"187","Picardie Universites","Universite de Picardie Jules Verne (UPJV)",0
-"188","Picardie Universites","Universite de Technologie de Compiegne",0
-"189","Picardie Universites","UDICE-French Research Universities",0
-"190","Picardie Universites","Universite Paris Cite",0
-"191","Pompeu Fabra University","University of California Los Angeles",0
-"192","Princeton University","University of Southern California",0
-"193","Princeton University","Chinese University of Hong Kong",0
-"194","Princeton University","University of Southern California",0
-"195","Princeton University","Harvard University",0
-"196","Princeton University","Yale University",0
-"197","Princeton University","Colorado State University",0
-"198","Princeton University","Ohio State University",0
-"199","Princeton University","Johns Hopkins University",0
-"200","Princeton University","University of California Irvine",0
-"201","Princeton University","Harvard University",0
-"202","Princeton University","Johns Hopkins University",0
-"203","PSL Research University Paris","Universite Paris-Dauphine",0
-"204","PSL Research University Paris","UDICE-French Research Universities",0
-"205","Roma Tre University","Duke University",0
-"206","Rutgers State University New Brunswick","University of Iowa",0
-"207","Rutgers State University New Brunswick","Columbia University",0
-"208","SAS Institute Inc","University of Florida",0
-"209","Smith College","Harvard University",0
-"210","Sorbonne Universite","Universite Paris Cite",0
-"211","Stanford University","Picardie Universites",0
-"212","Stanford University","Princeton University",0
-"213","Stanford University","Universite de Picardie Jules Verne (UPJV)",0
-"214","Stanford University","Harvard University",0
-"215","Stanford University","University of Michigan",0
-"216","Stanford University","UDICE-French Research Universities",0
-"217","Stanford University","Johns Hopkins University",0
-"218","Stanford University","University of California Berkeley",0
-"219","Stanford University","University of Toronto",0
-"220","Stanford University","Universite Paris Cite",0
-"221","Sunnybrook Research Institute","University Toronto Affiliates",0
-"222","Sunnybrook Research Institute","University Toronto Affiliates",0
-"223","Sunnybrook Research Institute","University Toronto Affiliates",0
-"224","SUNY Maritime College","National Institutes of Health (NIH) - USA",0
-"225","SUNY Maritime College","NIH National Cancer Institute (NCI)",0
-"226","Swiss Federal Institutes of Technology Domain","University of Munich",0
-"227","Swiss Federal Institutes of Technology Domain","Hebrew University of Jerusalem",0
-"228","Swiss Federal Institutes of Technology Domain","McMaster University",0
-"229","Swiss Federal Institutes of Technology Domain","University of California Berkeley",0
-"230","Swiss Federal Institutes of Technology Domain","University of California Berkeley",0
-"231","Tel Aviv University","Hebrew University of Jerusalem",0
-"232","Tel Aviv University","University of California Los Angeles",0
-"233","Tel Aviv University","University of Rochester",0
-"234","Tel Aviv University","University of California Los Angeles",0
-"235","Telethon Kids Institute","University of Western Australia",0
-"236","Telethon Kids Institute","University of Western Australia",0
-"237","Telethon Kids Institute","University of Western Australia",0
-"238","Temple University","Princeton University",0
-"239","Texas A&M University College Station","University of California Berkeley",0
-"240","UDICE-French Research Universities","Sorbonne Universite",0
-"241","UDICE-French Research Universities","PSL Research University Paris",0
-"242","UDICE-French Research Universities","Sorbonne Universite",0
-"243","UDICE-French Research Universities","Universite Paris Cite",0
-"244","UDICE-French Research Universities","Universite Paris-Dauphine",0
-"245","UDICE-French Research Universities","PSL Research University Paris",0
-"246","UDICE-French Research Universities","Universite de Bordeaux",0
-"247","UDICE-French Research Universities","Universite Paris Cite",0
-"248","UDICE-French Research Universities","Institut National de la Sante et de la Recherche Medicale (Inserm)",0
-"249","UDICE-French Research Universities","Universite Paris Cite",0
-"250","UDICE-French Research Universities","Universite Paris Cite",0
-"251","UDICE-French Research Universities","PSL Research University Paris",0
-"252","UDICE-French Research Universities","Sorbonne Universite",0
-"253","Universidade de Lisboa","Duke University",0
-"254","Universidade de Sao Paulo","Universidade Federal de Pernambuco",0
-"255","Universidade de Sao Paulo","University of Connecticut",0
-"256","Universidade de Sao Paulo","Universidade Federal Rural de Pernambuco (UFRPE)",0
-"257","Universidade Federal de Pernambuco","University of Innsbruck",0
-"258","Universita Ca Foscari Venezia","University of Toronto",0
-"259","Universita Ca Foscari Venezia","University of Warwick",0
-"260","Universite Catholique Louvain","Australian National University",0
-"261","Universite Catholique Louvain","University of Minnesota Twin Cities",0
-"262","Universite Catholique Louvain","University of New South Wales Sydney",0
-"263","Universite de Bordeaux","Institut National de la Sante et de la Recherche Medicale (Inserm)",0
-"264","Universite de Picardie Jules Verne (UPJV)","UDICE-French Research Universities",0
-"265","Universite de Picardie Jules Verne (UPJV)","Universite Paris Cite",0
-"266","Universite de Picardie Jules Verne (UPJV)","UDICE-French Research Universities",0
-"267","Universite de Picardie Jules Verne (UPJV)","Universite Paris Cite",0
-"268","Universite Paris-Dauphine","UDICE-French Research Universities",0
-"269","Universite Paris-Dauphine","PSL Research University Paris",0
-"270","Universite Paris Cite","UDICE-French Research Universities",0
-"271","University College Dublin","University of Washington",0
-"272","University College Dublin","University of Washington Seattle",0
-"273","University of Aberdeen","University of West England",0
-"274","University of Aberdeen","University of Karachi",0
-"275","University of Adelaide","University of Kent",0
-"276","University of Alabama Tuscaloosa","Southern Illinois University Edwardsville",0
-"277","University of Amsterdam","Erasmus University Rotterdam",0
-"278","University of Arizona","University of California Berkeley",0
-"279","University of Basel","Vienna University of Economics & Business",0
-"280","University of Basel","Stanford University",0
-"281","University of Bath","University of California San Diego",0
-"282","University of Bristol","Columbia University",0
-"283","University of Bristol","Institut National de la Sante et de la Recherche Medicale (Inserm)",0
-"284","University of Bristol","Nazarbayev University",0
-"285","University of Bristol","University of Warwick",0
-"286","University of Bristol","Swiss Federal Institutes of Technology Domain",0
-"287","University of Bristol","KIMEP University",0
-"288","University of Bristol","University of Gottingen",0
-"289","University of Bristol","University of Gottingen",0
-"290","University of Bristol","Queensland University of Technology (QUT)",0
-"291","University of British Columbia","National University of Singapore",0
-"292","University of California Berkeley","Hebrew University of Jerusalem",0
-"293","University of California Berkeley","University of Copenhagen",0
-"294","University of California Berkeley","Carnegie Mellon University",0
-"295","University of California Berkeley","Duke University",0
-"296","University of California Berkeley","University of Michigan",0
-"297","University of California Berkeley","University of Michigan",0
-"298","University of California Berkeley","University of California San Diego",0
-"299","University of California Berkeley","Carnegie Mellon University",0
-"300","University of California Berkeley","Harvard University",0
-"301","University of California Berkeley","UDICE-French Research Universities",0
-"302","University of California Berkeley","University of Miami",0
-"303","University of California Berkeley","Johns Hopkins University",0
-"304","University of California Berkeley","University of Auckland",0
-"305","University of California Davis","University of Waterloo",0
-"306","University of California Davis","University of Gottingen",0
-"307","University of California Los Angeles","University of California Los Angeles Medical Center",0
-"308","University of California Los Angeles","University of South Carolina",0
-"309","University of California Los Angeles","University of California Los Angeles Medical Center",0
-"310","University of California Los Angeles","Harvard University",0
-"311","University of California Los Angeles","University of California Berkeley",0
-"312","University of California Los Angeles","University of Auckland",0
-"313","University of California Los Angeles","University of South Carolina Columbia",0
-"314","University of California Los Angeles","Harvard University",0
-"315","University of California Los Angeles","University of London",0
-"316","University of California San Diego","University of Southern California",0
-"317","University of California San Francisco","Stanford University",0
-"318","University of California San Francisco","Stanford University",0
-"319","University of Cambridge","Columbia University",0
-"320","University of Cambridge","University of Jinan",0
-"321","University of Cambridge","University of Hong Kong",0
-"322","University of Cambridge","University of London",0
-"323","University of Cambridge","Imperial College London",0
-"324","University of Cambridge","University of St Andrews",0
-"325","University of Cambridge","Murdoch Children's Research Institute",0
-"326","University of Cambridge","University of London",0
-"327","University of Cambridge","Imperial College London",0
-"328","University of Cambridge","University of Melbourne",0
-"329","University of Cambridge","University of Minnesota Twin Cities",0
-"330","University of Cambridge","University College London",0
-"331","University of Chicago","Stanford University",0
-"332","University of Chicago","Chinese University of Hong Kong",0
-"333","University of Chicago","University of Pittsburgh",0
-"334","University of Chicago","University of Texas Austin",0
-"335","University of Chicago","Western University (University of Western Ontario)",0
-"336","University of Chicago","University of Pennsylvania",0
-"337","University of Chicago","Iowa State University",0
-"338","University of Connecticut","North Carolina State University",0
-"339","University of Connecticut","Universidade de Sao Paulo",0
-"340","University of Copenhagen","Aarhus University",0
-"341","University of Copenhagen","Utrecht University",0
-"342","University of Erlangen Nuremberg","Vrije Universiteit Amsterdam",0
-"343","University of Erlangen Nuremberg","Swiss Federal Institutes of Technology Domain",0
-"344","University of Erlangen Nuremberg","University of California Berkeley",0
-"345","University of Florida","Harvard University",0
-"346","University of Florida","University of Iowa",0
-"347","University of Florida","University of Western Australia",0
-"348","University of Helsinki","Finnish Meteorological Institute",0
-"349","University of Hong Kong","University of London",0
-"350","University of Illinois Chicago","University of Illinois Chicago Hospital",0
-"351","University of Illinois Chicago","University of Illinois Chicago Hospital",0
-"352","University of Illinois Chicago","University of Illinois Chicago Hospital",0
-"353","University of Illinois Urbana-Champaign","Universidade Nova de Lisboa",0
-"354","University of Illinois Urbana-Champaign","Universidade de Lisboa",0
-"355","University of Illinois Urbana-Champaign","Duke University",0
-"356","University of Iowa","University of Kentucky",0
-"357","University of Iowa","University of Florida",0
-"358","University of Jinan","University of Hong Kong",0
-"359","University of Jinan","University of London",0
-"360","University of Kentucky","University of Iowa",0
-"361","University of London","University College London",0
-"362","University of London","University College London",0
-"363","University of London","University College London",0
-"364","University of London","University College London",0
-"365","University of London","University of Oxford",0
-"366","University of London","University College London",0
-"367","University of London","University College London",0
-"368","University of London","University College London",0
-"369","University of Maine Orono","University of New Brunswick",0
-"370","University of Maryland College Park","University of California Los Angeles",0
-"371","University of Maryland College Park","University of North Carolina Chapel Hill",0
-"372","University of Massachusetts Amherst","Leiden University",0
-"373","University of Massachusetts Amherst","Leiden University - Excl LUMC",0
-"374","University of Miami","University of California Berkeley",0
-"375","University of Miami","University of California Berkeley",0
-"376","University of Michigan","University of Chicago",0
-"377","University of Michigan","Vrije Universiteit Amsterdam",0
-"378","University of Michigan","University of California Berkeley",0
-"379","University of Michigan","University of Toronto",0
-"380","University of Michigan","Yale University",0
-"381","University of Milan","Harvard University",0
-"382","University of Milan","University of Trieste",0
-"383","University of Milan","University of Trieste",0
-"384","University of Minnesota Twin Cities","Stanford University",0
-"385","University of Minnesota Twin Cities","University of Nebraska Medical Center",0
-"386","University of Minnesota Twin Cities","North Carolina State University",0
-"387","University of Minnesota Twin Cities","Pennsylvania State University - University Park",0
-"388","University of Minnesota Twin Cities","Columbia University",0
-"389","University of Minnesota Twin Cities","University of Toronto",0
-"390","University of Minnesota Twin Cities","Harvard University",0
-"391","University of Munich","European University Institute",0
-"392","University of Munich","Vrije Universiteit Amsterdam",0
-"393","University of Munich","Johannes Gutenberg University of Mainz",0
-"394","University of Nebraska Lincoln","University of Tennessee Knoxville",0
-"395","University of Nebraska Lincoln","UT Institute of Agriculture",0
-"396","University of New Brunswick","Indian Institute of Technology (IIT) - Kanpur",0
-"397","University of New Brunswick","Indian Institute of Technology (IIT) - Kanpur",0
-"398","University of North Carolina Chapel Hill","University of New South Wales Sydney",0
-"399","University of North Carolina Chapel Hill","Universite Catholique Louvain",0
-"400","University of North Carolina Chapel Hill","Chinese University of Hong Kong",0
-"401","University of North Carolina Chapel Hill","SAS Institute Inc",0
-"402","University of North Carolina Chapel Hill","University of New South Wales Sydney",0
-"403","University of North Carolina Chapel Hill","University of Michigan",0
-"404","University of North Carolina Chapel Hill","Texas A&M University College Station",0
-"405","University of North Carolina Chapel Hill","Yale University",0
-"406","University of North Carolina Chapel Hill","University of Florida",0
-"407","University of North Carolina Charlotte","University of California Los Angeles",0
-"408","University of North Carolina Charlotte","University of London",0
-"409","University of Oslo","Norwegian Institute of Public Health (NIPH)",0
-"410","University of Oslo","University of Bergen",0
-"411","University of Oslo","Norwegian Institute of Public Health (NIPH)",0
-"412","University of Oslo","University of Bergen",0
-"413","University of Oslo","Open University - UK",0
-"414","University of Oxford","Swiss Federal Institutes of Technology Domain",0
-"415","University of Oxford","Cornell University",0
-"416","University of Oxford","Imperial College London",0
-"417","University of Oxford","McGill University",0
-"418","University of Oxford","Vanderbilt University",0
-"419","University of Oxford","University of Freiburg",0
-"420","University of Oxford","University of Birmingham",0
-"421","University of Padua","University of Bologna",0
-"422","University of Padua","University of Bologna",0
-"423","University of Pennsylvania","Shanghai Jiao Tong University",0
-"424","University of Pennsylvania","Purdue University West Lafayette Campus",0
-"425","University of Pennsylvania","University of Texas Austin",0
-"426","University of Perugia","University College Dublin",0
-"427","University of Perugia","University of Washington",0
-"428","University of Perugia","University of Washington Seattle",0
-"429","University of Pittsburgh","University of California Berkeley",0
-"430","University of Pittsburgh","Indian Statistical Institute Kolkata",0
-"431","University of Pittsburgh","Western University (University of Western Ontario)",0
-"432","University of Pittsburgh","University of Pennsylvania",0
-"433","University of South Carolina","University of South Carolina Columbia",0
-"434","University of Southampton","University of Connecticut",0
-"435","University of Southampton","Universidade de Sao Paulo",0
-"436","University of Southern Denmark","Aalborg University",0
-"437","University of St Andrews","Imperial College London",0
-"438","University of Sydney","Wageningen University & Research",0
-"439","University of Sydney","Macquarie University",0
-"440","University of Tennessee Knoxville","UT Institute of Agriculture",0
-"441","University of Texas Austin","University of Chicago",0
-"442","University of Texas Austin","University of Chicago",0
-"443","University of Texas Austin","University of California Berkeley",0
-"444","University of Toronto","Duke University",0
-"445","University of Toronto","Michigan State University",0
-"446","University of Toronto","Sunnybrook Research Institute",0
-"447","University of Toronto","Sunnybrook Research Institute",0
-"448","University of Toronto","Sunnybrook Research Institute",0
-"449","University of Toronto","University Toronto Affiliates",0
-"450","University of Toronto","University Toronto Affiliates",0
-"451","University of Toronto","University of Manitoba",0
-"452","University of Toronto","University Toronto Affiliates",0
-"453","University of Toronto","University of Warwick",0
-"454","University of Toronto","Sunnybrook Research Institute",0
-"455","University of Toronto","Sunnybrook Research Institute",0
-"456","University of Toronto","Sunnybrook Research Institute",0
-"457","University of Toronto","University Toronto Affiliates",0
-"458","University of Toronto","University Toronto Affiliates",0
-"459","University of Toronto","University of Manitoba",0
-"460","University of Toronto","University Toronto Affiliates",0
-"461","University of Toronto","Sunnybrook Research Institute",0
-"462","University of Toronto","Sunnybrook Research Institute",0
-"463","University of Toronto","Sunnybrook Research Institute",0
-"464","University of Toronto","University Toronto Affiliates",0
-"465","University of Toronto","University Toronto Affiliates",0
-"466","University of Toronto","University of Manitoba",0
-"467","University of Toronto","University Toronto Affiliates",0
-"468","University of Toronto","University of Manitoba",0
-"469","University of Valencia","Yale University",0
-"470","University of Washington","University of Washington Seattle",0
-"471","University of Washington","University of Washington Seattle",0
-"472","University of Washington","University of Washington Seattle",0
-"473","University of Washington","University of Washington Seattle",0
-"474","University of Washington","University of Washington Seattle",0
-"475","University of Washington","University of Washington Seattle",0
-"476","University of Washington","University of Washington Seattle",0
-"477","University of Washington","University of Washington Seattle",0
-"478","University of Washington","University of Washington Seattle",0
-"479","University of Washington","University of Washington Seattle",0
-"480","University of Washington","University of Washington Seattle",0
-"481","University of Washington","University of Washington Seattle",0
-"482","University of Washington","University of Washington Seattle",0
-"483","University of Washington","University of Washington Seattle",0
-"484","University of Washington","University of Washington Seattle",0
-"485","University of Washington","University of Washington Seattle",0
-"486","University of Washington","University of Washington Seattle",0
-"487","University of Washington","University of Washington Seattle",0
-"488","University of Washington","University of Washington Seattle",0
-"489","University of Washington","University of Washington Seattle",0
-"490","University of Washington","University of Waterloo",0
-"491","University of Washington","National Institutes of Health (NIH) - USA",0
-"492","University of Washington","University of Bristol",0
-"493","University of Washington","Harvard University",0
-"494","University of Washington","Simon Fraser University",0
-"495","University of Washington","NIH National Cancer Institute (NCI)",0
-"496","University of Washington","Queensland University of Technology (QUT)",0
-"497","University of Washington","University of Washington Seattle",0
-"498","University of Washington","University of Washington Seattle",0
-"499","University of Washington","Schering-Plough Research Institute",0
-"500","University of Washington","University of Washington Seattle",0
-"501","University of Washington","University of Washington Seattle",0
-"502","University of Washington","University of Washington Seattle",0
-"503","University of Washington","University of Washington Seattle",0
-"504","University of Washington","University of Washington Seattle",0
-"505","University of Washington","University of Washington Seattle",0
-"506","University of Washington Seattle","University of Waterloo",0
-"507","University of Washington Seattle","National Institutes of Health (NIH) - USA",0
-"508","University of Washington Seattle","University of Bristol",0
-"509","University of Washington Seattle","Harvard University",0
-"510","University of Washington Seattle","University of Washington",0
-"511","University of Washington Seattle","Simon Fraser University",0
-"512","University of Washington Seattle","University of Washington",0
-"513","University of Washington Seattle","NIH National Cancer Institute (NCI)",0
-"514","University of Washington Seattle","Queensland University of Technology (QUT)",0
-"515","University of Washington Seattle","Schering-Plough Research Institute",0
-"516","University of Washington Seattle","University of Washington",0
-"517","University of Washington Seattle","University of Washington",0
-"518","University of Waterloo","University of Wisconsin Madison",0
-"519","University of Waterloo","University of Texas Austin",0
-"520","University of Waterloo","National Institute of Standards & Technology (NIST) - USA",0
-"521","University of Waterloo","University of Chicago",0
-"522","University of Waterloo","University of Gottingen",0
-"523","University of West England","University of Karachi",0
-"524","University of West Florida","Virginia Polytechnic Institute & State University",0
-"525","University of Wisconsin Madison","University of Chicago",0
-"526","University of Wisconsin Madison","University of Chicago",0
-"527","University of Wisconsin Madison","University of Washington",0
-"528","University of Wisconsin Madison","University of Washington Seattle",0
-"529","University of Wisconsin Madison","Harvard University",0
-"530","University of Wisconsin Madison","National Institute of Standards & Technology (NIST) - USA",0
-"531","University of Wisconsin Madison","University of California Los Angeles",0
-"532","University of Wisconsin Madison","Harvard University",0
-"533","Utrecht University","University of Copenhagen",0
-"534","Utrecht University","Louisiana State University",0
-"535","Vienna University of Economics & Business","University of Basel",0
-"536","Vienna University of Economics & Business","Stanford University",0
-"537","Virginia Polytechnic Institute & State University","University of West Florida",0
-"538","Washington State University","University of California Los Angeles",0
-"539","Western University (University of Western Ontario)","University of Pennsylvania",0
-"540","Worcester Polytechnic Institute","University of Oregon",0
-"541","Xiamen University","Pennsylvania State University - University Park",0
-"542","York University - Canada","Indiana University Bloomington",0
+Aalto University,Columbia University
+Aalto University,Columbia University
+Aarhus University,University of Iowa
+Acadia University,University of Pennsylvania
+Acadia University,University of Texas Austin
+Auburn University,Georgia Southern University
+Auburn University,Virginia Polytechnic Institute & State University
+Australian National University,University of Florida
+Australian National University,University of Western Australia
+Australian National University,University of Minnesota Twin Cities
+Boston University,Harvard University
+Boston University,University of London
+Boston University,University College London
+Bowling Green State University,Hungarian Alfred Renyi Institute of Mathematics
+Bowling Green State University,Hungarian Alfred Renyi Institute of Mathematics
+Carnegie Mellon University,University of California Berkeley
+Carnegie Mellon University,University of Minnesota Twin Cities
+Carnegie Mellon University,Columbia University
+Carnegie Mellon University,University of Toronto
+Carnegie Mellon University,University of Toronto
+Carnegie Mellon University,University of Sheffield
+Chinese University of Hong Kong,University of California Los Angeles
+Chinese University of Hong Kong,University of Wisconsin Madison
+Chinese University of Hong Kong,University of California Los Angeles
+Chinese University of Hong Kong,Pennsylvania State University - University Park
+Colorado State University,University of Washington Seattle
+Colorado State University,University of California Davis
+Colorado State University,University of California Davis
+Columbia University,York University - Canada
+Columbia University,University of Chicago
+Columbia University,Harvard University
+Columbia University,University of Chicago
+Columbia University,Iowa State University
+Columbia University,Sapienza University Rome
+Columbia University,Aalto University
+Columbia University,Indiana University Bloomington
+Columbia University,University of California Berkeley
+Columbia University,University of Minnesota Twin Cities
+Columbia University,Harvard University
+Columbia University,Sapienza University Rome
+Columbia University,University of California Berkeley
+Columbia University,National Institutes of Health (NIH) - USA
+Columbia University,University of Minnesota Twin Cities
+Columbia University,University of Cambridge
+Columbia University,NIH National Heart Lung & Blood Institute (NHLBI)
+Columbia University,Harvard University
+Columbia University,SUNY Community College
+Columbia University,State University of New York (SUNY) Stony Brook
+Columbia University,University of Toronto
+Columbia University,University of Toronto
+Cornell University,Harvard University
+Cornell University,Harvard University
+Dana-Farber Cancer Institute,Harvard University
+Dana-Farber Cancer Institute,Harvard University
+Dana-Farber Cancer Institute,Boston University
+Dana-Farber Cancer Institute,Boston University
+Dana-Farber Cancer Institute,Harvard University
+Dana-Farber Cancer Institute,Worcester Polytechnic Institute
+Dortmund University of Technology,Columbia University
+Drexel University,Johns Hopkins University
+Drexel University,Johns Hopkins University
+Drexel University,Johns Hopkins University
+Duke University,Harvard University
+Duke University,University of Miami
+Erasmus University Rotterdam,University of Virginia
+Flinders University South Australia,Colorado State University
+Georgia Institute of Technology,University of Wisconsin Madison
+Georgia Southern University,Virginia Polytechnic Institute & State University
+Harvard University,Massachusetts Institute of Technology (MIT)
+Harvard University,Massachusetts Institute of Technology (MIT)
+Harvard University,Boston University
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,Massachusetts Institute of Technology (MIT)
+Harvard University,Massachusetts Institute of Technology (MIT)
+Harvard University,University of Chicago
+Harvard University,University of Chicago
+Harvard University,Princeton University
+Harvard University,University of California Berkeley
+Harvard University,University of Illinois Urbana-Champaign
+Harvard University,University of Milan
+Harvard University,Texas A&M University College Station
+Harvard University,Princeton University
+Harvard University,Temple University
+Harvard University,University of Chicago
+Harvard University,University of Michigan
+Harvard University,University of Trieste
+Harvard University,Boston University
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,University of California Berkeley
+Harvard University,Boston University
+Harvard University,University of California Berkeley
+Harvard University,Worcester Polytechnic Institute
+Harvard University,Pennsylvania State University - University Park
+Harvard University,Aalto University
+Harvard University,University of Milan
+Harvard University,Johns Hopkins University
+Harvard University,University of Trieste
+Harvard University,Boston University
+Harvard University,University of Trieste
+Harvard University,Johns Hopkins University
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,Boston University
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,Dana-Farber Cancer Institute
+Harvard University,Boston University
+Harvard University,Schering-Plough Research Institute
+Harvard University,Worcester Polytechnic Institute
+Harvard University,Johns Hopkins University
+Harvard University,Rutgers State University New Brunswick
+Harvard University,University of California Los Angeles
+Harvard University,University of Miami
+Harvard University,University of California Los Angeles
+Hebrew University of Jerusalem,University of Rochester
+Hebrew University of Jerusalem,UDICE-French Research Universities
+Hebrew University of Jerusalem,Sorbonne Universite
+Hopital Universitaire Pitie-Salpetriere - APHP,Institut National de la Sante et de la Recherche Medicale (Inserm)
+Hopital Universitaire Pitie-Salpetriere - APHP,UDICE-French Research Universities
+Hopital Universitaire Pitie-Salpetriere - APHP,Sorbonne Universite
+Imperial College London,University of London
+Imperial College London,University of Oxford
+Imperial College London,University of Cambridge
+Imperial College London,University of Minnesota Twin Cities
+Imperial College London,University of Bremen
+Indian Institute of Management Ahmedabad,Harvard University
+Indian Institute of Management Ahmedabad,Dana-Farber Cancer Institute
+Indian Statistical Institute Kolkata,Northern Arizona University
+Indian Statistical Institute Kolkata,University of Oslo
+Indian Statistical Institute Kolkata,University of North Carolina Chapel Hill
+Indian Statistical Institute Kolkata,Open University - UK
+Institut National de la Sante et de la Recherche Medicale (Inserm),UDICE-French Research Universities
+Institut National de la Sante et de la Recherche Medicale (Inserm),Universite de Bordeaux
+Institut National de la Sante et de la Recherche Medicale (Inserm),UDICE-French Research Universities
+Institut National de la Sante et de la Recherche Medicale (Inserm),Sorbonne Universite
+Johns Hopkins University,Harvard University
+Johns Hopkins University,Harvard University
+Johns Hopkins University,University of California Berkeley
+Kangwon National University,University of Wisconsin Madison
+Kansas State University,Louisiana State University
+KIMEP University,University of Gottingen
+KIMEP University,University of Gottingen
+Lancaster University,University of Toronto
+Lancaster University,University of Toronto
+Leibniz Institute for Prevention Research & Epidemiology (BIPS),University of Bremen
+Leiden University,Leiden University Medical Center (LUMC)
+Leiden University,Leiden University Medical Center (LUMC)
+Leiden University,Leiden University - Excl LUMC
+Leiden University,Leiden University - Excl LUMC
+Leiden University,University of Amsterdam
+Leiden University,Leiden University Medical Center (LUMC)
+Leiden University,Leiden University - Excl LUMC
+Leiden University - Excl LUMC,University of Amsterdam
+Leiden University Medical Center (LUMC),Leiden University - Excl LUMC
+Leiden University Medical Center (LUMC),Leiden University - Excl LUMC
+Leiden University Medical Center (LUMC),University of Amsterdam
+Louisiana State University,Harvard University
+Massachusetts Institute of Technology (MIT),University of Warwick
+Massachusetts Institute of Technology (MIT),University of Chicago
+Massachusetts Institute of Technology (MIT),University of Texas Austin
+Massachusetts Institute of Technology (MIT),University of California Berkeley
+Massachusetts Institute of Technology (MIT),Princeton University
+Massachusetts Institute of Technology (MIT),Pennsylvania State University - University Park
+McGill University,Vanderbilt University
+Murdoch Children's Research Institute,University of Melbourne
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Cancer Institute (NCI)
+National Institutes of Health (NIH) - USA,NIH National Heart Lung & Blood Institute (NHLBI)
+Nazarbayev University,KIMEP University
+Nazarbayev University,University of Gottingen
+Nazarbayev University,University of Gottingen
+New York State Psychiatry Institute,Columbia University
+New York State Psychiatry Institute,SUNY Community College
+New York State Psychiatry Institute,State University of New York (SUNY) Stony Brook
+New York State Psychiatry Institute,Columbia University
+New York State Psychiatry Institute,SUNY Community College
+New York State Psychiatry Institute,State University of New York (SUNY) Stony Brook
+New York University,University of California Davis
+Northern Arizona University,University of Oslo
+Northern Arizona University,Open University - UK
+Northwestern University,Carnegie Mellon University
+Norwegian Institute of Public Health (NIPH),University of Bergen
+Norwegian University of Science & Technology (NTNU),Institut Polytechnique de Paris
+Ohio State University,University of Michigan
+Open University - UK,Carnegie Mellon University
+Open University - UK,University of Sheffield
+Oxford University Hospitals NHS Foundation Trust,University of Oxford
+Oxford University Hospitals NHS Foundation Trust,University of Birmingham
+Peking University,Pennsylvania State University - University Park
+Pennsylvania State University - University Park,Harvard University
+Pennsylvania State University - University Park,Universite de Orleans
+Pennsylvania State University - University Park,University of California Los Angeles
+Pennsylvania State University - University Park,University of California Los Angeles Medical Center
+Picardie Universites,Universite de Picardie Jules Verne (UPJV)
+Picardie Universites,UDICE-French Research Universities
+Picardie Universites,Universite Paris Cite
+Picardie Universites,Universite de Picardie Jules Verne (UPJV)
+Picardie Universites,Universite de Technologie de Compiegne
+Picardie Universites,UDICE-French Research Universities
+Picardie Universites,Universite Paris Cite
+Pompeu Fabra University,University of California Los Angeles
+Princeton University,University of Southern California
+Princeton University,Chinese University of Hong Kong
+Princeton University,University of Southern California
+Princeton University,Harvard University
+Princeton University,Yale University
+Princeton University,Colorado State University
+Princeton University,Ohio State University
+Princeton University,Johns Hopkins University
+Princeton University,University of California Irvine
+Princeton University,Harvard University
+Princeton University,Johns Hopkins University
+Princeton University,Johns Hopkins University
+Princeton University,Pennsylvania State University - University Park
+PSL Research University Paris,Universite Paris-Dauphine
+PSL Research University Paris,UDICE-French Research Universities
+PSL Research University Paris,Universite Paris-Dauphine
+PSL Research University Paris,Universite Paris-Dauphine
+Roma Tre University,Duke University
+Rutgers State University New Brunswick,University of Iowa
+Rutgers State University New Brunswick,Columbia University
+SAS Institute Inc,University of Florida
+Schering-Plough Research Institute,Rutgers State University New Brunswick
+Smith College,Harvard University
+Sorbonne Universite,Universite Paris Cite
+Stanford University,Picardie Universites
+Stanford University,Princeton University
+Stanford University,Universite de Picardie Jules Verne (UPJV)
+Stanford University,Harvard University
+Stanford University,University of Michigan
+Stanford University,UDICE-French Research Universities
+Stanford University,Johns Hopkins University
+Stanford University,University of California Berkeley
+Stanford University,University of Toronto
+Stanford University,Universite Paris Cite
+Stanford University,Johns Hopkins University
+Stanford University,University of California Berkeley
+Sunnybrook Research Institute,University Toronto Affiliates
+Sunnybrook Research Institute,University Toronto Affiliates
+Sunnybrook Research Institute,University Toronto Affiliates
+SUNY Community College,State University of New York (SUNY) Stony Brook
+SUNY Maritime College,National Institutes of Health (NIH) - USA
+SUNY Maritime College,NIH National Cancer Institute (NCI)
+Swiss Federal Institutes of Technology Domain,University of Munich
+Swiss Federal Institutes of Technology Domain,Hebrew University of Jerusalem
+Swiss Federal Institutes of Technology Domain,McMaster University
+Swiss Federal Institutes of Technology Domain,University of California Berkeley
+Swiss Federal Institutes of Technology Domain,University of California Berkeley
+Swiss Federal Institutes of Technology Domain,Yale University
+Tel Aviv University,Hebrew University of Jerusalem
+Tel Aviv University,University of California Los Angeles
+Tel Aviv University,University of Rochester
+Tel Aviv University,University of California Los Angeles
+Telethon Kids Institute,University of Western Australia
+Telethon Kids Institute,University of Western Australia
+Telethon Kids Institute,University of Western Australia
+Temple University,Princeton University
+Texas A&M University College Station,University of California Berkeley
+UDICE-French Research Universities,Sorbonne Universite
+UDICE-French Research Universities,PSL Research University Paris
+UDICE-French Research Universities,Sorbonne Universite
+UDICE-French Research Universities,Universite Paris Cite
+UDICE-French Research Universities,Universite Paris-Dauphine
+UDICE-French Research Universities,PSL Research University Paris
+UDICE-French Research Universities,Universite Paris-Dauphine
+UDICE-French Research Universities,Universite de Bordeaux
+UDICE-French Research Universities,Universite Paris Cite
+UDICE-French Research Universities,Institut National de la Sante et de la Recherche Medicale (Inserm)
+UDICE-French Research Universities,Universite Paris Saclay
+UDICE-French Research Universities,Universite Paris Cite
+UDICE-French Research Universities,Universite Paris Cite
+UDICE-French Research Universities,PSL Research University Paris
+UDICE-French Research Universities,Sorbonne Universite
+UDICE-French Research Universities,Universite Paris-Dauphine
+UDICE-French Research Universities,Sorbonne Universite
+UDICE-French Research Universities,Universite Paris Saclay
+Universidade de Lisboa,Duke University
+Universidade de Sao Paulo,Universidade Federal de Pernambuco
+Universidade de Sao Paulo,University of Connecticut
+Universidade de Sao Paulo,Universidade Federal Rural de Pernambuco (UFRPE)
+Universidade Federal de Pernambuco,University of Innsbruck
+Universita Ca Foscari Venezia,University of Toronto
+Universita Ca Foscari Venezia,University of Warwick
+Universite Catholique Louvain,Australian National University
+Universite Catholique Louvain,University of Minnesota Twin Cities
+Universite Catholique Louvain,University of New South Wales Sydney
+Universite de Bordeaux,Institut National de la Sante et de la Recherche Medicale (Inserm)
+Universite de Picardie Jules Verne (UPJV),UDICE-French Research Universities
+Universite de Picardie Jules Verne (UPJV),Universite Paris Cite
+Universite de Picardie Jules Verne (UPJV),UDICE-French Research Universities
+Universite de Picardie Jules Verne (UPJV),Universite Paris Cite
+Universite Paris-Dauphine,UDICE-French Research Universities
+Universite Paris-Dauphine,PSL Research University Paris
+Universite Paris Cite,UDICE-French Research Universities
+Universite Paris Cite,Universite Paris Saclay
+University College Dublin,University of Washington Seattle
+University College London,University of Cambridge
+University of Aberdeen,University of West England
+University of Aberdeen,University of Karachi
+University of Adelaide,University of Kent
+University of Alabama Tuscaloosa,Southern Illinois University Edwardsville
+University of Amsterdam,Erasmus University Rotterdam
+University of Arizona,University of California Berkeley
+University of Auckland,Oregon State University
+University of Basel,Vienna University of Economics & Business
+University of Basel,Stanford University
+University of Bath,University of California San Diego
+University of Bristol,Columbia University
+University of Bristol,Institut National de la Sante et de la Recherche Medicale (Inserm)
+University of Bristol,Nazarbayev University
+University of Bristol,University of Warwick
+University of Bristol,Swiss Federal Institutes of Technology Domain
+University of Bristol,KIMEP University
+University of Bristol,University of Gottingen
+University of Bristol,University of Gottingen
+University of Bristol,Queensland University of Technology (QUT)
+University of British Columbia,National University of Singapore
+University of California Berkeley,Hebrew University of Jerusalem
+University of California Berkeley,University of Copenhagen
+University of California Berkeley,Carnegie Mellon University
+University of California Berkeley,Duke University
+University of California Berkeley,University of Michigan
+University of California Berkeley,University of Michigan
+University of California Berkeley,University of California San Diego
+University of California Berkeley,Carnegie Mellon University
+University of California Berkeley,Harvard University
+University of California Berkeley,UDICE-French Research Universities
+University of California Berkeley,University of Miami
+University of California Berkeley,Sorbonne Universite
+University of California Berkeley,Johns Hopkins University
+University of California Berkeley,University of Auckland
+University of California Berkeley,Oregon State University
+University of California Berkeley,Yale University
+University of California Davis,University of Waterloo
+University of California Davis,University of Gottingen
+University of California Los Angeles,University of California Los Angeles Medical Center
+University of California Los Angeles,University of South Carolina
+University of California Los Angeles,Harvard University
+University of California Los Angeles,University of California Berkeley
+University of California Los Angeles,Harvard University
+University of California Los Angeles,University of Auckland
+University of California Los Angeles,University of South Carolina Columbia
+University of California Los Angeles,Pennsylvania State University - University Park
+University of California Los Angeles,Oregon State University
+University of California Los Angeles,Pennsylvania State University - University Park
+University of California Los Angeles,University of London
+University of California Los Angeles,University of California Los Angeles Medical Center
+University of California San Diego,University of Southern California
+University of California San Francisco,Stanford University
+University of California San Francisco,Stanford University
+University of Cambridge,Columbia University
+University of Cambridge,University of Jinan
+University of Cambridge,University of Hong Kong
+University of Cambridge,University of London
+University of Cambridge,Imperial College London
+University of Cambridge,University of St Andrews
+University of Cambridge,Murdoch Children's Research Institute
+University of Cambridge,University of London
+University of Cambridge,Imperial College London
+University of Cambridge,University of Melbourne
+University of Cambridge,University of Minnesota Twin Cities
+University of Cambridge,University College London
+University of Cambridge,University of Bremen
+University of Chicago,Stanford University
+University of Chicago,Chinese University of Hong Kong
+University of Chicago,University of Pittsburgh
+University of Chicago,University of Texas Austin
+University of Chicago,Western University (University of Western Ontario)
+University of Chicago,University of Pennsylvania
+University of Chicago,Iowa State University
+University of Connecticut,North Carolina State University
+University of Connecticut,Universidade de Sao Paulo
+University of Copenhagen,Aarhus University
+University of Copenhagen,Utrecht University
+University of Erlangen Nuremberg,Vrije Universiteit Amsterdam
+University of Erlangen Nuremberg,Swiss Federal Institutes of Technology Domain
+University of Erlangen Nuremberg,University of California Berkeley
+University of Erlangen Nuremberg,Yale University
+University of Florida,Harvard University
+University of Florida,University of Iowa
+University of Florida,University of Western Australia
+University of Helsinki,Finnish Meteorological Institute
+University of Hong Kong,University of London
+University of Illinois Chicago,University of Illinois Chicago Hospital
+University of Illinois Chicago,University of Illinois Chicago Hospital
+University of Illinois Chicago,University of Illinois Chicago Hospital
+University of Illinois Urbana-Champaign,Universidade Nova de Lisboa
+University of Illinois Urbana-Champaign,Universidade de Lisboa
+University of Illinois Urbana-Champaign,Duke University
+University of Iowa,University of Kentucky
+University of Iowa,University of Florida
+University of Jinan,University of Hong Kong
+University of Jinan,University of London
+University of Kentucky,University of Iowa
+University of London,University College London
+University of London,University College London
+University of London,University College London
+University of London,University College London
+University of London,University of Oxford
+University of London,University College London
+University of London,University College London
+University of London,University College London
+University of London,University of Cambridge
+University of Maine Orono,University of New Brunswick
+University of Manitoba,Children's Hospital Research Institute of Manitoba
+University of Maryland College Park,University of California Los Angeles
+University of Maryland College Park,University of North Carolina Chapel Hill
+University of Massachusetts Amherst,Leiden University
+University of Massachusetts Amherst,Leiden University - Excl LUMC
+University of Miami,University of California Berkeley
+University of Miami,University of California Berkeley
+University of Michigan,University of Chicago
+University of Michigan,Vrije Universiteit Amsterdam
+University of Michigan,University of California Berkeley
+University of Michigan,University of Toronto
+University of Michigan,Yale University
+University of Milan,Harvard University
+University of Milan,University of Trieste
+University of Milan,University of Trieste
+University of Minnesota Twin Cities,Stanford University
+University of Minnesota Twin Cities,University of Nebraska Medical Center
+University of Minnesota Twin Cities,North Carolina State University
+University of Minnesota Twin Cities,Pennsylvania State University - University Park
+University of Minnesota Twin Cities,University of Nebraska Medical Center
+University of Minnesota Twin Cities,Columbia University
+University of Minnesota Twin Cities,University of Toronto
+University of Minnesota Twin Cities,University of Toronto
+University of Minnesota Twin Cities,Harvard University
+University of Minnesota Twin Cities,University of Bremen
+University of Munich,European University Institute
+University of Munich,Vrije Universiteit Amsterdam
+University of Munich,Johannes Gutenberg University of Mainz
+University of Nebraska Lincoln,University of Tennessee Knoxville
+University of Nebraska Lincoln,UT Institute of Agriculture
+University of New Brunswick,Indian Institute of Technology (IIT) - Kanpur
+University of New Brunswick,Indian Institute of Technology (IIT) - Kanpur
+University of North Carolina Chapel Hill,University of New South Wales Sydney
+University of North Carolina Chapel Hill,Universite Catholique Louvain
+University of North Carolina Chapel Hill,Chinese University of Hong Kong
+University of North Carolina Chapel Hill,SAS Institute Inc
+University of North Carolina Chapel Hill,University of New South Wales Sydney
+University of North Carolina Chapel Hill,University of Michigan
+University of North Carolina Chapel Hill,Texas A&M University College Station
+University of North Carolina Chapel Hill,Yale University
+University of North Carolina Chapel Hill,University of Florida
+University of North Carolina Charlotte,University of California Los Angeles
+University of North Carolina Charlotte,University of London
+University of Oslo,Norwegian Institute of Public Health (NIPH)
+University of Oslo,University of Bergen
+University of Oslo,Norwegian Institute of Public Health (NIPH)
+University of Oslo,University of Bergen
+University of Oslo,Open University - UK
+University of Oxford,Swiss Federal Institutes of Technology Domain
+University of Oxford,Cornell University
+University of Oxford,Imperial College London
+University of Oxford,McGill University
+University of Oxford,Vanderbilt University
+University of Oxford,University of Freiburg
+University of Oxford,University of Birmingham
+University of Padua,University of Bologna
+University of Padua,University of Bologna
+University of Pennsylvania,Shanghai Jiao Tong University
+University of Pennsylvania,Purdue University West Lafayette Campus
+University of Pennsylvania,University of Texas Austin
+University of Perugia,University College Dublin
+University of Perugia,University of Washington Seattle
+University of Pittsburgh,University of California Berkeley
+University of Pittsburgh,Indian Statistical Institute Kolkata
+University of Pittsburgh,Western University (University of Western Ontario)
+University of Pittsburgh,University of Pennsylvania
+University of South Carolina,University of South Carolina Columbia
+University of Southampton,University of Connecticut
+University of Southampton,Universidade de Sao Paulo
+University of Southern Denmark,Aalborg University
+University of St Andrews,Imperial College London
+University of Sydney,Wageningen University & Research
+University of Sydney,Macquarie University
+University of Tennessee Knoxville,UT Institute of Agriculture
+University of Texas Austin,University of Chicago
+University of Texas Austin,University of Chicago
+University of Texas Austin,University of California Berkeley
+University of Toronto,Duke University
+University of Toronto,Michigan State University
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,University Toronto Affiliates
+University of Toronto,University Toronto Affiliates
+University of Toronto,University of Manitoba
+University of Toronto,University Toronto Affiliates
+University of Toronto,Children's Hospital Research Institute of Manitoba
+University of Toronto,University of Warwick
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,University Toronto Affiliates
+University of Toronto,University Toronto Affiliates
+University of Toronto,University of Manitoba
+University of Toronto,University Toronto Affiliates
+University of Toronto,Children's Hospital Research Institute of Manitoba
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,Sunnybrook Research Institute
+University of Toronto,University Toronto Affiliates
+University of Toronto,University Toronto Affiliates
+University of Toronto,University of Manitoba
+University of Toronto,University Toronto Affiliates
+University of Toronto,Children's Hospital Research Institute of Manitoba
+University of Toronto,University of Manitoba
+University of Toronto,Children's Hospital Research Institute of Manitoba
+University of Valencia,Yale University
+University of Washington Seattle,University of Waterloo
+University of Washington Seattle,National Institutes of Health (NIH) - USA
+University of Washington Seattle,University of Bristol
+University of Washington Seattle,Harvard University
+University of Washington Seattle,Simon Fraser University
+University of Washington Seattle,NIH National Cancer Institute (NCI)
+University of Washington Seattle,Queensland University of Technology (QUT)
+University of Washington Seattle,Schering-Plough Research Institute
+University of Washington Seattle,Rutgers State University New Brunswick
+University of Waterloo,University of Wisconsin Madison
+University of Waterloo,University of Texas Austin
+University of Waterloo,National Institute of Standards & Technology (NIST) - USA
+University of Waterloo,University of Chicago
+University of Waterloo,University of Gottingen
+University of West England,University of Karachi
+University of West Florida,Virginia Polytechnic Institute & State University
+University of Western Australia,Telethon Kids Institute
+University of Western Australia,Telethon Kids Institute
+University of Western Australia,Telethon Kids Institute
+University of Wisconsin Madison,University of Chicago
+University of Wisconsin Madison,University of Chicago
+University of Wisconsin Madison,University of Washington Seattle
+University of Wisconsin Madison,Harvard University
+University of Wisconsin Madison,National Institute of Standards & Technology (NIST) - USA
+University of Wisconsin Madison,University of California Los Angeles
+University of Wisconsin Madison,Harvard University
+Utrecht University,University of Copenhagen
+Utrecht University,Louisiana State University
+Utrecht University,Harvard University
+Vienna University of Economics & Business,University of Basel
+Vienna University of Economics & Business,Stanford University
+Virginia Polytechnic Institute & State University,University of West Florida
+Washington State University,University of California Los Angeles
+Western University (University of Western Ontario),University of Pennsylvania
+Worcester Polytechnic Institute,University of Oregon
+Xiamen University,Pennsylvania State University - University Park
+York University - Canada,Indiana University Bloomington
