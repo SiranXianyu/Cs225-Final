@@ -1,9 +1,23 @@
+CXX=clang++
+INCLUDES=-Iincludes/
+CXXFLAGS=-std=c++20 -g -fstandalone-debug -Wall -Wextra -Werror -pedantic $(INCLUDES)
 
-CXX = clang++
-CXXFLAGS = $(CS225) -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
-LDFLAGS = -std=c++1y -stdlib=libc++ -lc++abi -lm
+exec: bin/exec
+tests: bin/tests
 
-.PHONY: all test clean output_msg
+bin/exec: ./src/draw.cpp ./src/graph.cpp ./src/BFS.cpp ./src/brandes.cpp
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+bin/tests: ./tests/tests.cpp obj/catch.o ./src/draw.cpp ./src/graph.cpp ./src/BFS.cpp ./src/brandes.cpp
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+
+
+.DEFAULT_GOAL := exec
+.PHONY: clean exec tests
+
+clean:
+	rm -fr bin/* obj/*
 
 
 
