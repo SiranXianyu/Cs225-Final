@@ -1,23 +1,20 @@
-CXX=clang++
-INCLUDES=-Iincludes/
-CXXFLAGS=-std=c++20 -g -fstandalone-debug -Wall -Wextra -Werror -pedantic $(INCLUDES)
+EXENAME = main
 
-exec: bin/exec
-tests: bin/tests
+CXX = clang++
+CXXFLAGS = -std=c++11 -g -O0 -Wall -Wextra
 
-bin/exec: ./src/draw.cpp ./src/graph.cpp ./src/BFS.cpp ./src/brandes.cpp
-	$(CXX) $(CXXFLAGS) $^ -o $@
+all : $(EXENAME)
 
-bin/tests: ./tests/tests.cpp obj/catch.o ./src/draw.cpp ./src/graph.cpp ./src/BFS.cpp ./src/brandes.cpp
-	$(CXX) $(CXXFLAGS) $^ -o $@
+$(EXENAME): ./src/graph.o ./src/graph.h 
+ $(CXX) $(CXXFLAGS) main.cpp ./src/graph.o  -o $(EXENAME)
+
+graph.o: graph.h graph.cpp
+ $(CXX) $(CXXFLAGS) -c ./src/graph.cpp
 
 
-
-.DEFAULT_GOAL := exec
-.PHONY: clean exec tests
-
+.PHONY: clean
 clean:
-	rm -fr bin/* obj/*
+ rm -f *.o $(EXENAME)
 
 
 
