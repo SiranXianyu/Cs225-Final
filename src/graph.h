@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 #include <map>
-#include <unordered_map>
+#include <unordered_set>
 #include <fstream>
 #include <sstream>
 #include <set>
@@ -28,7 +28,9 @@ class Graph {
     //one connected component. The time complexity will be O(V+E),
     //and the space complexity will be O(V).
     void ConnectedComponents();
-    std::vector<Node> BFS(unsigned school_number, bool visited[]);
+    std::unordered_set<Node> BFS(unsigned school_number, bool visited[]);
+
+    
     private:
     void ReadSchools();
     void ReadRelations();
@@ -41,8 +43,8 @@ class Graph {
 
     //raw data of universities stored in pairs
     std::vector<std::pair<std::string, int> > schools;
-    std::vector<std::pair<std::string, string>> relations;
+    std::vector<std::pair<std::string, std::string>> relations;
 
     //data after BFS for searching for connected components
-    std::vector<std::set<Node> > connected_components;
+    std::vector<std::unordered_set<Node> > connected_components;
 };
