@@ -28,7 +28,7 @@ class Graph {
     //one connected component. The time complexity will be O(V+E),
     //and the space complexity will be O(V).
     void ConnectedComponents();
-    std::unordered_set<Node> BFS(unsigned school_number, bool visited[]);
+    std::vector<Node> BFS(unsigned school_number, bool visited[]);
 
     
     private:
