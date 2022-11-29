@@ -14,14 +14,14 @@
 #include <cstdlib>
 #include <utility>
 
-Struct Node {
+struct Node {
     //the school number is based on the order we read data
     unsigned school_number;
     std::string name;
     unsigned cited_times;
 };
 
-Class Graph {
+class Graph {
     public:
     //use BFS to do the traversal. The input will be a list of nodes and the output will
     //be a matrix representing the connected components while each line refers to 
