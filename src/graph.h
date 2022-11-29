@@ -46,5 +46,5 @@ class Graph {
     std::vector<std::pair<std::string, std::string>> relations;
 
     //data after BFS for searching for connected components
-    std::vector<std::unordered_set<Node> > connected_components;
+    std::vector<std::vector<Node> > connected_components;
 };
