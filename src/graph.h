@@ -23,13 +23,28 @@ struct Node {
 
 class Graph {
     public:
+    //constructor:
+    Graph();
+
     //use BFS to do the traversal. The input will be a list of nodes and the output will
     //be a matrix representing the connected components while each line refers to 
     //one connected component. The time complexity will be O(V+E),
     //and the space complexity will be O(V).
     void ConnectedComponents();
     std::vector<Node> BFS(unsigned school_number, bool visited[]);
+    
+    //getter functions:
+    std::vector<Node> getNodes() {
+        return nodes_;
+    }
 
+    std::vector<std::vector<Node> > getAdjacencyLists() {
+        return adjacency_lists_;
+    }
+
+    std::vector<std::vector<Node> > getConnectedComponents() {
+        return connected_components;
+    }
     
     private:
     void ReadSchools();
