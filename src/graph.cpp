@@ -162,3 +162,11 @@ std::vector<Node> Graph::BFS(unsigned school_Number, bool visited[]) {
     
 
 }
+
+Graph::Graph() {
+    ReadSchools();
+    ReadRelations();
+    ReadEdges();
+    ReadVertices();
+    RefineLists();
+}
