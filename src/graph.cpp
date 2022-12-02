@@ -3,9 +3,14 @@
 #include <queue>
 
 //read file data_edge.csv into relations
+void printsth() {
+    std::cout << "nned" << std::endl;
+}
 void Graph::ReadRelations() {
+    std::cout << "fuck you" << std::endl;
     std::ifstream file_stream;
     file_stream.open("data_edge.csv");
+    std::cout << "fuck you" << std::endl;
     std::string token;
     
     while (!file_stream.eof()) {
@@ -164,9 +169,12 @@ std::vector<Node> Graph::BFS(unsigned school_Number, bool visited[]) {
 }
 
 Graph::Graph() {
-    ReadSchools();
-    ReadRelations();
-    ReadEdges();
-    ReadVertices();
-    RefineLists();
+    std::cout << "ssss" << std::endl;
+    //printsth();
+    //ReadRelations();
+    //ReadVertices();
+    //ReadSchools();
+    //ReadEdges();
+    //
+    //RefineLists();
 }
