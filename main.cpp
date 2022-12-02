@@ -1,14 +1,21 @@
 #include <iostream>
 #include "./src/graph.h"
-#include "./src/graph.cpp"
-int main () {
-    std::cout << "Hello" << std::endl;
-    return 0;
-    Graph graph;
-    std::vector<Node> schools_list = graph.getNodes();
 
-    //Cout all the schools
-    for (unsigned k = 0; k < schools_list.size(); k++) {
-        std::cout << schools_list.at(k).name << std::endl;
+int main () {
+    
+    Graph graph;// error in this line
+    
+    for (unsigned k = 0; k < 9; k++) {
+        std::cout << "hello" << std::endl;
     }
+    
+    //Cout all the schools
+    //for (unsigned k = 0; k < schools_list.size(); k++) {
+    //    std::cout << "hello" << std::endl;
+    //    std::cout << schools_list.at(k).name << std::endl;
+    //}
+    //for (unsigned k = 0; k < 9; k++) {
+    //    std::cout << "hello" << std::endl;
+    //}
+    //return 0;
 }
