@@ -116,7 +116,7 @@ std::vector<std::pair<double, double>> Graph::CalculateNetForce(std::vector<Node
             Node school = cc.at(k);
             std::pair<double, double> netforce = nf_cc.at(k);
             double time = 1;
-            double d_x = netforce.first * time * time  / (2 * school.centrality);           
+            double d_x = netforce.first * time * time  / (2 * school.centrality);  
             double d_y = netforce.second * time * time  / (2 * school.centrality);
             if (d_x > max_d) d_x = max_d;
             if (d_y > max_d) d_y = max_d;
@@ -155,14 +155,9 @@ std::vector<std::pair<double, double>> Graph::CalculateNetForce(std::vector<Node
 
 void Graph::Draw(std::vector<Node> cc) {
     
-
-    for (unsigned i = 0; i < cc.size(); i++) {
-        std::cout << cc.at(i).x << "    " << cc.at(i).y << std::endl;
-    }
     //mark each node with size
     //by assigning iteration parameter k to each color value, the color of each node can change
     unsigned base_size = 10; 
-    std::cout << cc.size() << std::endl;
     for (unsigned k = 0; k < cc.size(); k++) {
         Node school = cc.at(k);
         images[school.x][school.y] = (int)k;
@@ -177,30 +172,30 @@ void Graph::Draw(std::vector<Node> cc) {
 
 
     //mark the line
-    for (unsigned k = 0; k < cc.size(); k++) {
-        Node n1 = cc.at(k);
-        std::vector<Node> neighbors_origin = adjacency_lists_.at(n1.school_number);
-        std::vector<Node> neighbors;
-        for (unsigned k = 0; k < neighbors_origin.size(); k++) {
-            for (unsigned l = 0; l < cc.size(); l++) {
-                if (cc.at(l).name == neighbors_origin.at(k).name) {
-                    neighbors.push_back(cc.at(l));
-                }
-            }
-        }
-        for (unsigned l = 0; l < neighbors.size(); l++) {
-            Node n2 = neighbors.at(l);
-            unsigned x1 = n1.x;
-            unsigned y1 = n1.y;
-            unsigned x2 = n2.x;
-            unsigned y2 = n2.y;
-            for (unsigned x = x1; x <= x2; x++) {
-                double y = ((y2-y1)/(x2-x1)) * (x-x1) + y1;
-                unsigned y_ = std::round(y);
-                images[x][y_] = 200;
-            }
-        }
-    }
+    //for (unsigned k = 0; k < cc.size(); k++) {
+    //    Node n1 = cc.at(k);
+    //    std::vector<Node> neighbors_origin = adjacency_lists_.at(n1.school_number);
+    //    std::vector<Node> neighbors;
+    //    for (unsigned k = 0; k < neighbors_origin.size(); k++) {
+    //        for (unsigned l = 0; l < cc.size(); l++) {
+    //            if (cc.at(l).name == neighbors_origin.at(k).name) {
+    //                neighbors.push_back(cc.at(l));
+    //            }
+    //        }
+    //    }
+    //    for (unsigned l = 0; l < neighbors.size(); l++) {
+    //        Node n2 = neighbors.at(l);
+    //        unsigned x1 = n1.x;
+    //        unsigned y1 = n1.y;
+    //        unsigned x2 = n2.x;
+    //        unsigned y2 = n2.y;
+    //        for (unsigned x = x1; x <= x2; x++) {
+    //            double y = ((y2-y1)/(x2-x1)) * (x-x1) + y1;
+    //            unsigned y_ = std::round(y);
+    //            images[x][y_] = 200;
+    //        }
+    //    }
+    //}
 }
 
 
