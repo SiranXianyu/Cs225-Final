@@ -1,0 +1,487 @@
+---
+title: "CS225_data_cleaning"
+author: "JialongLi"
+date: "11/13/2022"
+output: html_document
+---
+# Data Cleaning and input "Latitude" and "Longitude data" by hand
+
+```{r setup, include=FALSE}
+# import necessary packages
+library(tidyverse)
+library(stringr)
+library(readxl)
+library(data.table)
+```
+
+```{r read data}
+# read raw data
+data_1k <- read_excel("1-1000.xls")
+data_2k <- read_excel("1001-2000.xls")
+data_3k <- read_excel("2001-3000.xls")
+
+# select cols that we need
+data_select_1k = data_1k |>
+  select(Affiliations) |>
+  drop_na()
+
+data_select_2k = data_2k |>
+  select(Affiliations) |>
+  drop_na()
+
+
+dim(data_select_1k)
+dim(data_select_2k)
+```
+
+```{r}
+# data_select <- rbind(data_select_1k, data_select_2k)
+data_select = data_select_1k
+dim(data_select)
+```
+
+```{r}
+# string split 
+After_split = data_select$Affiliations |>
+  str_split(";", simplify = TRUE)
+
+Afflication_df = as.data.frame(After_split)
+
+data_select$First = Afflication_df[,1]
+data_select$Second = Afflication_df[,2]
+data_select$Third = Afflication_df[,3]
+data_select$Fourth = Afflication_df[,4]
+data_select$Fifth = Afflication_df[,5]
+
+data_select$Second = sub('.', '', data_select$Second)
+data_select$Third = sub('.', '', data_select$Third)
+data_select$Fourth = sub('.', '', data_select$Fourth)
+data_select$Fifth = sub('.', '', data_select$Fifth)
+
+
+# all systems
+output_1 = data_select |>
+  select(First, `Times Cited, WoS Core`) |>
+  #filter((First %like% "Univ") | (First %like% "Inst") | (First %like% "College")) |>
+  arrange(desc(`Times Cited, WoS Core`)) |>
+  rename(School = First)
+output_cleaned_1 = output_1 |>
+  filter((!School %like% 'System') & (School != "Purdue University")  & (School != "Pennsylvania State University")  & (School != "University of North Carolina") & (School != "Arizona State University") & (School != "Indian Statistical Institute") & (School != "University of Washington") & (!School %like% "Medical School") & (!School %like% 'School of'))
+
+output_2 = data_select |>
+  select(Second, `Times Cited, WoS Core`) |>
+  #filter((Second %like% "Univ") | (Second %like% "Inst") | (Second %like% "College")) |>
+  arrange(desc(`Times Cited, WoS Core`)) |>
+  rename(School = Second)
+output_cleaned_2 = output_2 |>
+  filter((!School %like% 'System') & (School != "Purdue University")  & (School != "Pennsylvania State University")  & (School != "University of North Carolina") & (School != "Arizona State University") & (School != "Indian Statistical Institute") & (School != "University of Washington") & (!School %like% "Medical School") & (!School %like% 'School of'))
+
+output_3 = data_select |>
+  select(Third, `Times Cited, WoS Core`) |>
+  #filter((Third %like% "Univ") | (Third %like% "Inst") | (Third %like% "College")) |>
+  arrange(desc(`Times Cited, WoS Core`)) |>
+  rename(School = Third)
+output_cleaned_3 = output_3 |>
+  filter((!School %like% 'System') & (School != "Purdue University")  & (School != "Pennsylvania State University")  & (School != "University of North Carolina") & (School != "Arizona State University") & (School != "Indian Statistical Institute") & (School != "University of Washington") & (!School %like% "Medical School") & (!School %like% 'School of'))
+
+output_4 = data_select |>
+  select(Fourth, `Times Cited, WoS Core`) |>
+  #filter((Fourth %like% "Univ") | (Fourth %like% "Inst") | (Fourth %like% "College")) |>
+  arrange(desc(`Times Cited, WoS Core`)) |>
+  rename(School = Fourth)
+output_cleaned_4 = output_4 |>
+  filter((!School %like% 'System') & (School != "Purdue University")  & (School != "Pennsylvania State University")  & (School != "University of North Carolina") & (School != "Arizona State University") & (School != "Indian Statistical Institute") & (School != "University of Washington") & (!School %like% "Medical School") & (!School %like% 'School of'))
+
+output_5 = data_select |>
+  select(Fifth, `Times Cited, WoS Core`) |>
+  #filter((Fifth %like% "Univ") | (Fifth %like% "Inst") | (Fifth %like% "College")) |>
+  arrange(desc(`Times Cited, WoS Core`)) |>
+  rename(School = Fifth)
+output_cleaned_5 = output_5 |>
+  filter((!School %like% 'System') & (School != "Purdue University")  & (School != "Pennsylvania State University")  & (School != "University of North Carolina") & (School != "Arizona State University") & (School != "Indian Statistical Institute") & (School != "University of Washington") & (!School %like% "Medical School") & (!School %like% 'School of'))
+
+output_total <- rbind(output_cleaned_1, output_cleaned_2, output_cleaned_3, output_cleaned_4, output_cleaned_5)
+
+droped_output = output_total |> 
+  filter(School %like% "Univ" | School %like% "College" | School %like% "Institu") |>
+  group_by(`School`) |>
+  summarise(times = n()) |>
+  arrange(desc(times)) 
+```
+
+
+```{r}
+droped_output
+droped_output$School[1]
+droped_output$School[1:262] = str_replace_all(droped_output$School[1:262], "( )", "_")
+write.table(droped_output, "data_vertex_262.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+```
+
+```{r}
+edge_builder = data_select |>
+  select(-c(Affiliations, `Times Cited, WoS Core`))
+```
+
+## deduplication
+For example, Purdue University System; Purdue University; Purdue University West Lafayette Campus is literally point to one university, but it appears 3 times.
+Where we want to remove:
+
+University of Minnesota System
+University of Illinois System
+University of California System
+University System of Georgia
+Indiana University System
+University System of Maryland
+Arizona State University
+State University System of Florida
+Louisiana State University System
+Purdue University System
+University of Michigan System
+University of Texas System
+University of Massachusetts System
+University of Nebraska System
+University System of Ohio
+University of South Carolina System
+Indian Institute of Management (IIM System)
+Purdue University
+Pennsylvania Commonwealth System of Higher Education (PCSHE)
+University of Alabama System
+Pennsylvania State University
+Southern Illinois University System
+University of Hawaii System
+Texas A&M University System
+Louisiana State University System
+University of Houston System
+University of North Carolina
+University of Maine System
+University of Alabama System
+Auburn University System
+Pennsylvania State University
+Indian Statistical Institute
+University of Tennessee System
+University of North Carolina
+
+-> I can do this by regex, but It's more safety to check it by eye first.
+
+```{r}
+edge_builder
+```
+
+
+```{r}
+dim(edge_builder)
+# (607, 5)
+
+# delete them -> overwrite by "" (all cols)
+for (i in 1:607) {
+  for (j in 1:5) {
+  if (edge_builder[i,j] %like% 'System' | edge_builder[i,j] %like% 'School of' |  edge_builder[i,j] %like% "Medical School" | edge_builder[i,j] == "Purdue University" | edge_builder[i,j] == "Pennsylvania State University" | edge_builder[i,j] == "University of North Carolina" | edge_builder[i,j] == "Indian Statistical Institute" | edge_builder[i,j] == "Arizona State University" | edge_builder[i,j] == "University of Washington") {
+    edge_builder[i,j] = ""
+    }
+  }
+}
+  
+edge_builder
+
+# MRC Biostatistics Unit
+# Harvard T.H. Chan School of Public Health	
+```
+
+```{r}
+# how many universities left in each layers
+edge_builder |>
+  filter(First != "") |>
+  nrow()
+edge_builder |>
+  filter(Second != "") |>
+  nrow()
+edge_builder |>
+  filter(Third != "") |>
+  nrow()
+edge_builder |>
+  filter(Fourth != "") |>
+  nrow()
+edge_builder |>
+  filter(Fifth != "") |>
+  nrow()
+# we' ll only keep papers that have <= 5 writers.
+```
+
+
+```{r}
+# transfer the 19 df with features to df with 2 features.
+# Which is how the "edge" works.
+removed_df = edge_builder
+
+# push value into result, (1 & 2)
+result_1 <- data.frame(matrix(nrow = 7000, ncol = 2))
+
+
+# 1 & 2
+for (i in 1:607) {
+  if (removed_df[[i,1]] != "" & removed_df[[i,2]] != "") {
+    result_1$X1[[i]] = removed_df[[i,1]]
+    result_1$X2[[i]] = removed_df[[i,2]]
+  }
+}
+
+# 1 & 3
+for (i in 1:607) {
+  if (removed_df[[i,1]] != "" & removed_df[[i,3]] != "") {
+    result_1$X1[[i+607]] = removed_df[[i,1]]
+    result_1$X2[[i+607]] = removed_df[[i,3]]
+  }
+}
+
+# 1 & 4
+for (i in 1:607) {
+  if (removed_df[[i,1]] != "" & removed_df[[i,4]] != "") {
+    result_1$X1[[i+607*2]] = removed_df[[i,1]]
+    result_1$X2[[i+607*2]] = removed_df[[i,4]]
+  }
+}
+
+# 1 & 5
+for (i in 1:607) {
+  if (removed_df[[i,1]] != "" & removed_df[i,5] != "") {
+    result_1$X1[[i+607*3]] = removed_df[[i,1]]
+    result_1$X2[[i+607*3]] = removed_df[[i,5]]
+  }
+}
+
+# 2 & 3
+for (i in 1:607) {
+  if (removed_df[[i,2]] != "" & removed_df[[i,3]] != "") {
+    result_1$X1[[i+607*4]] = removed_df[[i,2]]
+    result_1$X2[[i+607*4]] = removed_df[[i,3]]
+  }
+}
+
+# 2 & 4
+for (i in 1:607) {
+  if (removed_df[[i,2]] != "" & removed_df[[i,4]] != "") {
+    result_1$X1[[i+607*5]] = removed_df[[i,2]]
+    result_1$X2[[i+607*5]] = removed_df[[i,4]]
+  }
+}
+
+# 2 & 5
+for (i in 1:607) {
+  if (removed_df[[i,2]] != "" & removed_df[[i,5]] != "") {
+    result_1$X1[[i+607*6]] = removed_df[[i,2]]
+    result_1$X2[[i+607*6]] = removed_df[[i,5]]
+  }
+}
+
+# 3 & 4
+for (i in 1:607) {
+  if (removed_df[[i,3]] != "" & removed_df[[i,4]] != "") {
+    result_1$X1[[i+607*7]] = removed_df[[i,3]]
+    result_1$X2[[i+607*7]] = removed_df[[i,4]]
+  }
+}
+
+# 3 & 5
+for (i in 1:607) {
+  if (removed_df[[i,3]] != "" & removed_df[[i,5]] != "") {
+    result_1$X1[[i+607*8]] = removed_df[[i,3]]
+    result_1$X2[[i+607*8]] = removed_df[[i,5]]
+  }
+}
+
+# 4 & 5
+for (i in 1:607) {
+  if (removed_df[[i,4]] != "" & removed_df[[i,5]] != "")
+    result_1$X1[[i+607*9]] = removed_df[[i,4]]
+    result_1$X2[[i+607*9]] = removed_df[[i,5]]
+}
+
+result_1
+```
+
+```{r}
+result_droped = result_1 |>
+  drop_na() |> 
+  filter( (X1 %like% "Univ" | X1 %like% "College" | X1 %like% "Institu") & (X2 %like% "Univ" | X2 %like% "College" | X2 %like% "Institu")) |>
+  arrange(X1)
+
+result_droped$X1[1:617] = str_replace_all(result_droped$X1[1:617], "( )", "_")
+result_droped$X2[1:617] = str_replace_all(result_droped$X2[1:617], "( )", "_")
+
+write.table(result_droped, "data_edge_617.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+```
+
+```{r}
+# test case 0 -> special test
+# if universities only coop with themselves
+
+vertex_0 = c("UIUC", "Purdue")
+coop_0 = c("UIUC", "UIUC", "UIUC")
+
+edge_1 = c("UIUC", "UIUC")
+edge_2 = c("UIUC", "UIUC")
+edge_3 = c("UIUC", "UIUC")
+
+test_vertex_0 = t(t(vertex_0))
+test_edge_0 = t(cbind(edge_1, edge_2, edge_3))
+
+write.table(test_vertex_0, "data_vertex_test0.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+write.table(test_edge_0, "data_edge_test0.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+
+# The connect component should be 2.
+```
+
+
+```{r}
+# test case 1 -> simple
+vertex_1 = c("UIUC", "Purdue", "NU", "UChicago")
+coop_1 = c("UIUC", "NU", "Purdue")
+coop_2 = c("NU", "Purdue")
+
+edge_1 = c("UIUC", "NU")
+edge_2 = c("UIUC", "Purdue")
+edge_3 = c("NU", "Purdue")
+edge_4 = c("NU", "Purdue")
+
+test_vertex_1 = t(t(vertex_1))
+test_edge_1 = t(cbind(edge_1, edge_2, edge_3, edge_4))
+
+write.table(test_vertex_1, "data_vertex_test1.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+write.table(test_edge_1, "data_edge_test1.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+```
+
+```{r}
+# test case 2 -> complex
+vertex_2 = c("UIUC", "Purdue", "NU", "UChicago", "Harvard", "MIT", "U_of_T")
+coop_1 = c("UIUC", "NU", "Purdue", "MIT","UIUC")
+coop_2 = c("Purdue","NU","MIT")
+coop_3 = c("UChicago", "NU")
+coop_4 = c("Harvard", "Harvard")
+
+# extract UIUC_1
+edge_a1 = c("UIUC", "NU")
+edge_a2 = c("UIUC", "Purdue")
+edge_a3 = c("UIUC", "MIT") 
+edge_a4 = c("UIUC", "UIUC")
+
+# extract UIUC_2
+edge_a5 = c("UIUC", "NU")
+edge_a6 = c("UIUC", "Purdue")
+edge_a7 = c("UIUC", "MIT") 
+edge_a8 = c("UIUC", "UIUC")
+
+# extract NU
+edge_b1 = c("NU", "UIUC")
+edge_b2 = c("NU", "Purdue")
+edge_b3 = c("NU", "MIT") 
+edge_b4 = c("NU", "UIUC") 
+edge_b5 = c("NU", "Purdue")
+edge_b6 = c("NU", "MIT")
+edge_b7 = c("NU", "UChicago")
+
+# extract Purdue
+edge_c1 = c("Purdue", "UIUC")
+edge_c2 = c("Purdue", "NU")
+edge_c3 = c("Purdue", "MIT")
+edge_c4 = c("Purdue", "UIUC")
+edge_c5 = c("Purdue", "NU")
+edge_c6 = c("Purdue", "MIT")
+
+# extract MIT
+edge_d1 = c("MIT", "UIUC")
+edge_d2 = c("MIT", "NU")
+edge_d3 = c("MIT", "Purdue")
+edge_d4 = c("MIT", "UIUC")
+edge_d5 = c("MIT", "Purdue")
+edge_d6 = c("MIT", "NU")
+
+# extract UChicago
+edge_e1 = c("UChicago", "NU")
+
+# extract UChicago
+edge_f1 = c("Harvard", "Harvard")
+
+# write out
+test_vertex_2 = t(t(vertex_2))
+test_edge_2 = t(cbind(edge_a1,edge_a2,edge_a3,edge_a4,edge_a5,edge_a6,edge_a7,edge_a8,edge_b1,edge_b2,edge_b3,edge_b4,edge_b5,edge_b6,edge_b7,edge_c1,edge_c2,edge_c3,edge_c4,edge_c5,edge_c6,edge_d1,edge_d2,edge_d3,edge_d4,edge_d5,edge_d6,edge_e1,edge_f1))
+
+
+write.table(test_vertex_2, "data_vertex_test2.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+write.table(test_edge_2, "data_edge_test2.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+
+# connected component should be 3
+```
+
+```{r}
+# test betweeness
+# suppose in a subgraph, there are 6 schools
+
+BC_test_0 = c("UIUC", "UCLA", "Duke", "Rice", "Yale", "UCSD")
+
+BC_edge_a1 = c("UIUC", "UCLA")
+BC_edge_a2 = c("UIUC", "Duke")
+BC_edge_a3 = c("Duke", "Yale")
+BC_edge_a4 = c("Duke", "Rice")
+
+BC_edge_a5 = c("Yale", "Rice")
+BC_edge_a6 = c("Yale", "UCSD")
+BC_edge_a7 = c("Rice", "UCSD")
+BC_edge_a8 = c("Rice", "UCLA")
+
+# a = 1.5 UCLA
+# b = 2.5 Rice
+# c = 2.5 Yale
+# d = 0 UCSD
+# e = 1 UIUC
+# f = 1.5 Duke
+
+BC_test_vertex_0 = t(t(BC_test_0))
+BC_test_edge_0 = t(cbind(BC_edge_a1,BC_edge_a2,BC_edge_a3,BC_edge_a4,BC_edge_a5,BC_edge_a6,BC_edge_a7))
+
+
+write.table(BC_test_vertex_0, "data_BC_vertex_test0.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+write.table(BC_test_edge_0, "data_BC_edge_test0.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+```
+
+```{r}
+# test betweeness
+# suppose in a subgraph, there are 6 schools
+
+BC_test_1 = c("UIUC", "Duke", "Rice", "Yale", "UCSD")
+
+BC_edge_b1 = c("UIUC", "Duke")
+BC_edge_b2 = c("Duke", "Yale")
+BC_edge_b3 = c("Duke", "Rice")
+BC_edge_b4 = c("Yale", "Rice")
+BC_edge_b5 = c("Yale", "UCSD")
+BC_edge_b6 = c("UCSD", "Rice")
+
+BC_test_vertex_1 = t(t(BC_test_1))
+BC_test_edge_1 = t(cbind(BC_edge_b1,BC_edge_b2,BC_edge_b3,BC_edge_b4,BC_edge_b5,BC_edge_b6))
+
+write.table(BC_test_vertex_1, "data_BC_vertex_test1.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+write.table(BC_test_edge_1, "data_BC_edge_test1.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+```
+
+```{r}
+# test betweeness
+# suppose in a subgraph, there are 6 schools
+
+BC_test_2 = c("UIUC", "UChicago", "NU", "Yale", "Purdue", "Harvard")
+
+BC_edge_c1 = c("UIUC", "UChicago")
+BC_edge_c2 = c("UChicago", "Yale")
+BC_edge_c3 = c("Yale", "UIUC")
+BC_edge_c4 = c("UIUC", "NU")
+BC_edge_c5 = c("NU", "Purdue")
+BC_edge_c6 = c("NU", "Harvard")
+BC_edge_c7 = c("Purdue", "Harvard")
+
+BC_test_vertex_2 = t(t(BC_test_2))
+BC_test_edge_2 = t(cbind(BC_edge_c1,BC_edge_c2,BC_edge_c3,BC_edge_c4,BC_edge_c5,BC_edge_c6,BC_edge_c7))
+
+write.table(BC_test_vertex_2, "data_BC_vertex_test2.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+write.table(BC_test_edge_2, "data_BC_edge_test2.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, sep = ",")
+```
+
+
