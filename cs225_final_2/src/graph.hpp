@@ -280,11 +280,6 @@ void ReadRelations(const std::string & edge_file) {
     // this parameter should be already assigned with coordinated
     std::vector<std::pair<double, double>> CalculateNetForce(std::vector<Node> cc);
 
-    // 
-    std::vector<Node> Move(std::vector<Node> cc);
-    void Draw(std::vector<Node> cc);
-    void toPPM(const std::string& name) const;
-    
    
 
     private:
@@ -302,3 +297,4 @@ void ReadRelations(const std::string & edge_file) {
 
 // Helper Functions: (export)
 void ExportBC(std::vector<std::pair<std::string, double>> Betweenness);
+void ExportNetForce(std::vector<std::pair<double, double>> Netforce);
