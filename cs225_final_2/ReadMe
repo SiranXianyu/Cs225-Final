@@ -1,38 +1,38 @@
 # README.md
 Github Organization:
-The bold part is for grading.
+The following parts are for grading.
 
 folders
 > data
   — “data_edge_617.csv”, 
   — “data_vertex_262.csv” 
   as our input file.
-> src
+> **src**
   — bfs_traversal.cpp
   — brandes_algorithm.cpp
   — export_bc.cpp
   — fruchterman_Reingold.cpp
   — get_functions.cpp
   — graph.hpp
-all the code
-> tests
+**all the code**
+> **tests**
   > test_data (all the test data input)
   — catch.hpp
   — tests.cpp
-Betweenness_Centrality_Table.csv (the result of brandes algorithm)
-main.cpp
+**Betweenness_Centrality_Table.csv (the result of brandes algorithm)**
+**main.cpp**
 Makefile
 data_cleaning.rmd
 Project contract
 
-Result.md
-ReadMe.md
-cs225_final_slides.ppt
+**Result.md**
+**ReadMe.md**
+**cs225_final_slides.ppt**
 
-Presentation video:
+**Presentation video**:
 > https://mediaspace.illinois.edu/media/t/1_wcm6edgz
 
-Presentation slide:
+**Presentation slide**:
 > cs225_final_slides.ppt
 
 # Running Instructions:
@@ -42,7 +42,7 @@ Run the code
 make
 ./main
 ```
-To get the “Betweenness_Centrality_Table.csv” and “” Graph.
+To get the “Betweenness_Centrality_Table.csv” and Net-force result.
 Note: It usually takes 30 seconds.
 
 Test the algorithm
