@@ -9,7 +9,7 @@
 int main () {
     
     Graph graph;
-    graph.Build("data_edge_617.csv", "data_edge_262.csv");
+    graph.Build("data/data_edge_617.csv", "data/data_vertex_262.csv");
     graph.ConnectedComponents();
     //graph.Build("tests/test_data/data_BC_edge_test0.csv", "tests/test_data/data_BC_vertex_test0.csv");
 
@@ -60,8 +60,17 @@ int main () {
     // Visualization
     graph.updateCC();
     std::vector<std::vector<Node>> cc = graph.GetConnectedComponents();
-    std::vector<Node> coordinated_cc = graph.Distribute(cc.at(0));
-    std::vector<std::pair<double, double>> net_force = graph.CalculateNetForce(coordinated_cc);
-    ExportNetForce(net_force);
+    std::ofstream myFile("Net_Force_Table");
+    for (unsigned i = 0; i < cc.size(); i++) {
+        std::vector<Node> coordinated_cc = graph.Distribute(cc.at(i));
+        std::vector<std::pair<double, double>> net_force = graph.CalculateNetForce(coordinated_cc);
+        for (auto pair : net_force) {
+            double force_on_x = pair.first;
+            double force_on_y = pair.second;
+            myFile << "force on x coordinate = " << force_on_x << ",  " << "force on y coordinate = " << force_on_y  << '\n';
+        }
+    }
+    myFile.close();
+    
     return 0;           
 }
