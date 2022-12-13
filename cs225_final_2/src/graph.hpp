@@ -135,7 +135,7 @@ void ReadRelations(const std::string & edge_file) {
         }
     }
 
-    // ???????????????????????
+    
     void RefineLists() {
         std::vector<std::vector<Node> >  new_lists;
         for (unsigned school_Number = 0; school_Number < nodes_.size(); school_Number++) {
@@ -249,11 +249,20 @@ void ReadRelations(const std::string & edge_file) {
     std::vector<std::vector<Node>> GetAdjacencyLists();
     std::vector<std::vector<Node>> GetConnectedComponents();
 
+    void updateCC() {
+        for (unsigned k = 0; k < connected_components.size(); k++) {
+            for (unsigned l = 0; l < connected_components.at(k).size(); l++) {
+                double c = nodes_.at(connected_components.at(k).at(l).school_number).centrality;
+                connected_components.at(k).at(l).centrality = c;
+            }
+        }
+    }
+
+
     // Visualization
     bool image[1200][1200];
     int images[1200][1200];
 
-    void updateCC(); 
 
     // these functions are used for drawing images
     // this function distribute vertex in one connected components randomly
@@ -271,138 +280,12 @@ void ReadRelations(const std::string & edge_file) {
     // this parameter should be already assigned with coordinated
     std::vector<std::pair<double, double>> CalculateNetForce(std::vector<Node> cc);
 
-    // accepts the original connected components, returns the connected components with new location
-    //std::vector<Node> Move(std::vector<Node> cc);
-
-    //void Draw(std::vector<Node> cc);
-
-    //void toPPM(const std::string& name) const;
-
-// accepts the original connected components, returns the connected components with new location
-std::vector<Node> Move(std::vector<Node> cc) {
-    double max_d = 5;
-    double min_d = -5;
-    std::vector<Node> updated_cc;
-    std::vector<std::pair<double, double>> nf_cc = CalculateNetForce(cc);
-    for (unsigned k = 0; k < cc.size(); k++) {
-       Node school = cc.at(k);
-       std::pair<double, double> netforce = nf_cc.at(k);
-       double time = 1;
-       double d_x = netforce.first * time * time  / (2 * school.centrality);           
-       double d_y = netforce.second * time * time  / (2 * school.centrality);
-       if (d_x > max_d) d_x = max_d;
-       if (d_y > max_d) d_y = max_d;
-       if (d_x < min_d) d_x = min_d;
-       if (d_y < min_d) d_y = min_d;
-       //test if it collide with others, every nodes should keep a distance of 5 to each other
-       //if the new location of a node collide with others, we dont move it. 
-       //Additionally, update image, the previous location should be false and
-       //the new location should be true
-       bool x_move = true;
-       bool y_move = true;
-       int new_x = (int)school.x + (int)std::round(d_x);
-       int new_y = (int)school.y + (int)std::round(d_y);
-       if (new_x < 0 || new_x >= 1500) x_move = false;
-       if (new_y < 0 || new_y >= 1500) y_move = false;
-       for (unsigned k = 0; k < cc.size(); k++) {
-           int interval_x = std::abs((int)cc.at(k).x - (int)school.x);
-           int interval_y = std::abs((int)cc.at(k).y - (int)school.y);
-           if (interval_x > 5) x_move = false;
-           if (interval_y > 5) y_move = false;
-       }
-       if (x_move) {
-           school.x += std::round(d_x);
-       }
-       if (y_move) {
-           school.y += std::round(d_y);
-       }
-       updated_cc.push_back(school);
-   }
-   return updated_cc;
-}
-
-void Draw(std::vector<Node> cc) {
-    //Selection sort: sort the connected component from low centrality to high centrality
-    //update parameter cc(sorted)
-    for (unsigned k = 0; k < cc.size() - 1; k++) {
-        Node n1 = cc.at(k);
-        for (unsigned l = k + 1; l < cc.size(); l++) {
-            if (cc.at(l).centrality < n1.centrality) {
-                Node temp = cc.at(l);
-                cc.at(l) = n1;
-                n1 = temp;
-            }
-            if (cc.at(l).centrality == n1.centrality) {
-                if (cc.at(l).occurrence_times < n1.occurrence_times) {
-                    Node temp = cc.at(l);
-                    cc.at(l) = n1;
-                    n1 = temp;
-                }
-            }
-        }
-    }
-    // mark each node with size
-    // by assigning iteration parameter k to each color value, the color of each node can change
-    unsigned base_size = 10; 
-    std::cout << cc.size() << std::endl;
-    for (unsigned k = 0; k < cc.size(); k++) {
-        Node school = cc.at(k);
-        images[school.x][school.y] = (int)k;
-        for (unsigned i = school.x - base_size; i <= school.x + base_size; i++) {
-            for (unsigned j = school.y - base_size; j <= school.y + base_size; j++) {
-                if (std::sqrt((school.x - i) * (school.x - i) + (school.y - j) * (school.y - j)) <= base_size) {
-                    images[i][j] = k;
-                }
-            }
-        }
-    }
-    // mark the line
-    // for (unsigned k = 0; k < cc.size(); k++) {
-    //    Node n1 = cc.at(k);
-    //    std::vector<Node> neighbors_origin = adjacency_lists_.at(n1.school_number);
-    //    std::vector<Node> neighbors;
-    //    for (unsigned k = 0; k < neighbors_origin.size(); k++) {
-    //        for (unsigned l = 0; l < cc.size(); l++) {
-    //            if (cc.at(l).name == neighbors_origin.at(k).name) {
-    //                neighbors.push_back(cc.at(l));
-    //            }
-    //        }
-    //    }
-    //    for (unsigned l = 0; l < neighbors.size(); l++) {
-    //        Node n2 = neighbors.at(l);
-    //        unsigned x1 = n1.x;
-    //        unsigned y1 = n1.y;
-    //        unsigned x2 = n2.x;
-    //        unsigned y2 = n2.y;
-    //        for (unsigned x = x1; x <= x2; x++) {
-    //            double y = ((y2-y1)/(x2-x1)) * (x-x1) + y1;
-    //            unsigned y_ = std::round(y);
-    //            images[x][y_] = 200;
-    //        }
-    //    }
-    //}
-
-}
-
-void toPPM(const std::string& name) {
-        std::ofstream ofs{name};
-        ofs << "P3" << "\n";
-        ofs << std::to_string(1200) << " " << std::to_string(1200) << "\n";
-        ofs << "255" << "\n";
-        for (unsigned i = 0; i < 1200; i++) {
-            for (unsigned j = 0; j < 1200; j++) {
-                int color = images[i][j];
-                if (j == 0)
-                    ofs << color << " " << color << " " << color;
-                else 
-                    ofs << " " << color << " " << color << " " << color;
-
-            }
-            ofs << "\n";
-        }
-        ofs.close();
-    }
-
+    // 
+    std::vector<Node> Move(std::vector<Node> cc);
+    void Draw(std::vector<Node> cc);
+    void toPPM(const std::string& name) const;
+    
+   
 
     private:
     //refined data used for future algorithms
