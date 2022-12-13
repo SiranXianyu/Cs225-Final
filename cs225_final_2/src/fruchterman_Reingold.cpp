@@ -106,15 +106,3 @@ std::vector<std::pair<double, double>> Graph::CalculateNetForce(std::vector<Node
 }
 
 
-void ExportNetForce(std::vector<std::pair<double, double>> Netforce) {
-    // create an output filestream object;
-    std::ofstream myFile("Net_Force_Table");
-    
-    for (auto pair : Netforce) {
-        double force_on_x = pair.first;
-        double force_on_y = pair.second;
-        myFile << "force on x coordinate = " << force_on_x << ",  " << "force on y coordinate = " << force_on_y  << '\n';
-    }
-
-    myFile.close();
-}
