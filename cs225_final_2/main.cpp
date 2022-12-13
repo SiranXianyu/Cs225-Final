@@ -9,7 +9,7 @@
 int main () {
     
     Graph graph;
-    graph.Build("data_edge_617.csv", "data_vertex_262.csv");
+    graph.Build("tests/test_data/data_edge_test2.csv", "tests/test_data/data_vertex_test2.csv");
     graph.ConnectedComponents();
     //graph.Build("tests/test_data/data_BC_edge_test0.csv", "tests/test_data/data_BC_vertex_test0.csv");
 
@@ -65,11 +65,11 @@ int main () {
         std::cout << coordinated_cc.at(i).x << "    " << coordinated_cc.at(i).y << std::endl;
     }
 
-    //std::vector<Node> moved_cc = graph.Move(coordinated_cc);
+    std::vector<Node> moved_cc = graph.Move(coordinated_cc);
     //for (unsigned i = 0; i < moved_cc.size(); i++) {
     //    std::cout << moved_cc.at(i).x << "    " << moved_cc.at(i).y << std::endl;
     //}
-    graph.Draw(coordinated_cc);
+    graph.Draw(moved_cc);
     graph.toPPM("result.ppm");
     return 0;           
 }
