@@ -60,17 +60,23 @@ Several functions are called in the main.cpp:
 ```
 # Create an object of My Class (Graph)  
 Graph graph 
+  
 # The inputs are a “edge.csv”, a “vertex.csv”.  
 graph.Build(“tests/test_data/data_edge_test2.csv”, “tests/test_data/data_vertex_test2.csv”)  
+  
 # Run the Brandes algorithm to get VofBetweeness, which is a vector of betweenness centrality.  
 graph.Brandes()  
+  
 # Get the result, which is a vector of std::pair<string,double>. The string is the name of the school, and the double is the betweenness centrality of that vertex (school).  
 graph.GetNameAndBetweeness()  
+  
 # write the Betweenness_Centrality_Table.csv.  
 ExportBC(VofBetweenness)  
+  
 # build the force-directed graph
 graph.updateCC();  
 std::vector<std::vector<Node>> cc = graph.GetConnectedComponents();
+  
 # write the Net_Force_Table.csv, which is the result of Fruchterman-Reingold algorithm  
 std::ofstream myFile(“Net_Force_Table”)  
 ```
