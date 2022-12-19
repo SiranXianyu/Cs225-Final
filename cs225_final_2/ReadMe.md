@@ -57,11 +57,11 @@ Note: It usually takes 15 seconds.
 ### Important functions:  
 Several functions are called in the main.cpp:  
 
-···
+```
 # Create an object of My Class (Graph)  
 Graph graph 
 graph.Build(“tests/test_data/data_edge_test2.csv”, “tests/test_data/data_vertex_test2.csv”)  
-# The inputs are a “edge.csv”, a “vertex.csv”.  
+// The inputs are a “edge.csv”, a “vertex.csv”.  
 graph.Brandes()  
 Run the Brandes algorithm to get VofBetweeness, which is a vector of betweenness centrality.  
 graph.GetNameAndBetweeness()  
@@ -72,4 +72,4 @@ graph.updateCC();
 std::vector<std::vector<Node>> cc = graph.GetConnectedComponents();  
 std::ofstream myFile(“Net_Force_Table”)  
 write the Net_Force_Table.csv, which is the result of Fruchterman-Reingold algorithm  
-···
+```
