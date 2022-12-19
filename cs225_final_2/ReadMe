@@ -1,12 +1,13 @@
 # README.md
+How to run our code.
+
 Github Organization:
-The following parts are for grading.
 
 folders
 > data
   — “data_edge_617.csv”, 
   — “data_vertex_262.csv” 
-  as our input file.
+  input csv files.
 > **src**
   — bfs_traversal.cpp
   — brandes_algorithm.cpp
@@ -14,7 +15,7 @@ folders
   — fruchterman_Reingold.cpp
   — get_functions.cpp
   — graph.hpp
-**all the code**
+  implement algorithms.
 > **tests**
   > test_data (all the test data input)
   — catch.hpp
