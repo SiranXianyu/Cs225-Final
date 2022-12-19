@@ -1,13 +1,12 @@
 # README.md
-How to run our code.
 
-Github Organization:
+## Github Organization:
 
-folders
-> data
-  — “data_edge_617.csv”, 
-  — “data_vertex_262.csv” 
-  input csv files.
+folders   
+> data  
+  — “data_edge_617.csv”  
+  — “data_vertex_262.csv”  
+  input csv files.  
 > **src**
   — bfs_traversal.cpp
   — brandes_algorithm.cpp
